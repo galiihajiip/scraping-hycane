@@ -1,0 +1,42 @@
+# Researcher-defined mapping (13_HYCANE_MAPPING_INSIGHTS.md). Relevance = how directly a HYCANE component can
+# address the pain (0-1). These weights are judgement calls, published here and varied in sensitivity analysis.
+pain_map:
+  PH:            {relevance: 1.0, job: "Keep nutrient solution in the right pH range", outcome: "Stable pH without constant manual testing", features: [ph_monitoring, alerts, recommendations, trend_history], component: "IoT pH sensor + AI alert/recommendation", value: "Core hardware differentiation; reduces most-cited chemistry failure"}
+  EC_TDS:        {relevance: 1.0, job: "Dose nutrients at the right strength", outcome: "Correct nutrient concentration at each growth stage", features: [tds_ec_monitoring, alerts, recommendations], component: "IoT TDS/EC sensor + dosing recommendation", value: "Core sensing value; links to nutrient consumable sales"}
+  NUTRIENTS:     {relevance: 0.8, job: "Feed plants correctly and diagnose deficiencies", outcome: "Healthy growth without guesswork", features: [tds_ec_monitoring, recommendations, diagnostics, education], component: "AI recommendations + nutrient consumables", value: "Recurring revenue (nutrients) + guidance"}
+  TEMPERATURE:   {relevance: 0.9, job: "Keep root zone/water cool enough", outcome: "Avoid heat-driven root rot", features: [temperature_monitoring, alerts], component: "Water temperature sensor + alert", value: "Relevant to tropical Indonesian conditions (hypothesis)"}
+  WATER:         {relevance: 0.8, job: "Keep reservoir topped up and water quality acceptable", outcome: "No dry-outs or neglected reservoirs", features: [water_level_monitoring, alerts, reminders], component: "Water-level sensor + reminder", value: "Reduces failure while away"}
+  OXYGEN:        {relevance: 0.4, job: "Keep roots oxygenated", outcome: "No suffocation/root rot", features: [alerts, diagnostics], component: "Not directly sensed (no DO sensor in concept); pump-failure inference possible", value: "Gap: DO not monitored"}
+  PLANT_HEALTH:  {relevance: 0.7, job: "Know what is wrong with my plant", outcome: "Early diagnosis and correct fix", features: [diagnostics, ai_anomaly_detection, recommendations, community], component: "AI analysis + education/community", value: "Engagement + premium AI features"}
+  KNOWLEDGE:     {relevance: 0.8, job: "Learn hydroponics without being overwhelmed", outcome: "Confidence to start and succeed", features: [beginner_mode, education, community, recommendations], component: "App guided cultivation + education + community", value: "Beginner onboarding; workshops"}
+  SETUP:         {relevance: 0.6, job: "Get a working system quickly", outcome: "Plug-and-play start", features: [beginner_mode, education], component: "Pre-assembled kit + guides", value: "Kit sales"}
+  TIME:          {relevance: 0.7, job: "Grow without daily babysitting", outcome: "Low-maintenance routine", features: [alerts, reminders, automation_dosing, remote_app_control], component: "Monitoring + alerts", value: "Convenience positioning"}
+  COST:          {relevance: 0.5, job: "Grow affordably", outcome: "Acceptable upfront and running cost", features: [], component: "Pricing/packaging (not a feature)", value: "Price risk; middle-market positioning must be validated"}
+  SPACE:         {relevance: 0.6, job: "Grow food in a small urban space", outcome: "Compact, clean indoor/balcony system", features: [beginner_mode], component: "Compact kit form factor", value: "Urban segment fit"}
+  EQUIPMENT:     {relevance: 0.6, job: "Have reliable hardware", outcome: "No pump/leak failures", features: [alerts, water_level_monitoring], component: "Kit QC + water-level alert + after-sales", value: "Warranty/after-sales; reliability is a trust driver"}
+  SENSOR:        {relevance: 0.9, job: "Trust my readings", outcome: "Accurate, low-calibration sensing", features: [ph_monitoring, tds_ec_monitoring], component: "Sensor quality/calibration routine", value: "Risk: sensor distrust can undermine core value"}
+  AUTOMATION:    {relevance: 0.7, job: "Automate routine tasks", outcome: "Less manual work", features: [automation_dosing, alerts, remote_app_control], component: "IoT + (future) dosing", value: "Premium tier candidate"}
+  SOFTWARE:      {relevance: 0.7, job: "Use an app that just works", outcome: "Reliable connectivity, no lock-in", features: [dashboard, remote_app_control], component: "Mobile app", value: "Risk: app failure/lock-in complaints"}
+  AI:            {relevance: 0.6, job: "Get smart advice", outcome: "Correct, explainable recommendations", features: [ai_anomaly_detection, recommendations], component: "AI layer", value: "Premium subscription candidate (unvalidated)"}
+  MEDIA:         {relevance: 0.9, job: "Use a growing medium that works and is not wasteful", outcome: "Good germination/rooting; less waste", features: [biodegradable_media], component: "Bagasse-based biodegradable media", value: "Consumable revenue + sustainability story"}
+  SUSTAINABILITY: {relevance: 0.6, job: "Grow in an environmentally responsible way", outcome: "Less plastic/rockwool/energy waste", features: [biodegradable_media], component: "Bagasse media + circular-economy narrative", value: "Competition-theme fit; customer salience to be tested"}
+  LIGHT:         {relevance: 0.3, job: "Give plants enough light", outcome: "Non-leggy, productive plants", features: [education, diagnostics], component: "Not in HYCANE concept (no lighting)", value: "Gap: lighting not addressed"}
+  SUPPORT:       {relevance: 0.6, job: "Get help when something breaks", outcome: "Responsive after-sales", features: [community, education], component: "Customer service + community", value: "Retention"}
+feature_component:
+  ph_monitoring: "IoT pH sensor"
+  tds_ec_monitoring: "IoT TDS/EC sensor"
+  temperature_monitoring: "IoT temperature sensor"
+  water_level_monitoring: "IoT water-level sensor"
+  alerts: "App alerts"
+  dashboard: "App dashboard"
+  trend_history: "Cloud data history"
+  ai_anomaly_detection: "AI anomaly detection"
+  recommendations: "AI recommendations"
+  beginner_mode: "Guided beginner mode"
+  reminders: "App reminders"
+  diagnostics: "AI/plant diagnostics"
+  education: "Education content"
+  community: "Community"
+  biodegradable_media: "Bagasse biodegradable media"
+  automation_dosing: "Automated dosing (not in current concept)"
+  remote_app_control: "Remote app control"
