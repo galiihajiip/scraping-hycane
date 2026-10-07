@@ -1,0 +1,98 @@
+=== src.nlp.run_nlp 22:02:36
+gold candidates 93473 | core scope 92066
+gold (pre-semantic-dedup) 93473
+semantic near-duplicates flagged 348
+gold after NLP 93125
+=== src.nlp.topics 22:08:03
+{'k_selected': 35, 'silhouette_sweep': {20: 0.3335, 25: 0.3337, 30: 0.3562, 35: 0.3634, 40: 0.3579}, 'nmi_vs_nmf': 0.182, 'ari_vs_nmf': 0.049, 'hdbscan_leaf_clusters': 53, 'hdbscan_leaf_outlier_share': 0.535, 'nmi_vs_hdbscan_leaf_nonoutliers': 0.875}
+0 5580 7 | bang, kak, pak, mas, coba, mantap, mau, apa, mana, dont
+1 5250 7 | bermanfaat, kasih, ilmunya, terima, terimakasih, terima kasih, semoga, sangat, sukses, ilmu
+2 4771 8 | hydroponics, hidroponik, hydroponic, fish, hydro, aquaponics, water, video, systems, ikan
+3 4734 7 | sir, ang, bang, kak, mas, pak, salam, lang, ako, yung
+4 4453 8 | nutrisi, ppm, nutrients, nutrient, water, calcium, solution, air, nitrate, mix
+5 4099 8 | hydroponics, hydroponic, grow, garden, plants, indoor, growing, gardening, water, soil
+6 3931 8 | tanaman, seeds, plants, plant, melon, benih, daun, seed, grow, buah
+7 3854 8 | basil, leaves, plant, plants, seeds, roots, growing, grow, pods, seed
+8 3553 8 | tomatoes, tomato, peppers, plants, plant, pepper, growing, leaves, grow, cherry
+9 3419 8 | sangat, bos, belajar, sukses, tutorial, menginspirasi, tutorialnya, kreatif, mantap, idea
+10 3105 8 | roots, water, plants, root, plant, grow, growing, nutrient, coco, net
+11 3080 8 | apa, bang, mix, pakai, mas, pupuk, pake, kak, pak, rockwool
+12 3037 8 | air, water, airnya, apa, kak, pakai, hidroponik, hari, tap, kalo
+13 2746 8 | light, lights, led, grow, matahari, lighting, plants, sinar, leds, sinar matahari
+14 2733 8 | beli, harga, berapa, toko, jual, dimana, kak, online, modal, bang
+15 2673 8 | farming, food, hydroponics, land, hydroponic, people, farm, vertical, farms, agriculture
+16 2596 8 | nutrients, soil, organic, water, fertilizer, nutrient, plants, hydroponics, hydroponic, compost
+17 2273 7 | garden, gardening, berkebun, grow, video, petani, love, kebun, growing, green
+18 2257 8 | ppm, meter, liter, tds, air, berapa, liter air, kalibrasi, sensor, pekatan
+19 2182 8 | sayuran, sayur, daun, vegetables, bawang, grow, buah, greens, mix, tanaman
+20 2085 8 | lettuce, grow, growing, kratky, spinach, salad, plants, seeds, water, plant
+21 2075 6 | video, videos, great video, great, videonya, youtube, kak, love, vidio, channel
+22 1902 7 | pump, pompa, pipe, pumps, pvc, air, water, pressure, listrik, power
+23 1772 8 | water, pump, air, bucket, buckets, reservoir, drain, flow, gallon, dwc
+24 1715 8 | plastic, foam, plastik, plastics, food, black, cups, pool, pvc, safe
+25 1702 8 | hujan, temperature, air, water, heat, chiller, atap, temp, fan, panas
+26 1655 6 | berapa, pipa, ukuran, lubang, jarak, bang, brp, mas, paralon, inch
+27 1329 8 | aerogarden, bounty, pods, grow, harvest, garden, elite, aero, seed, new
+28 1308 8 | hari, kain, berapa, panen, jam, apa, timer, flanel, kak, berapa hari
+29 1189 7 | channel, media, posts week, posts, link, music, post, week, subscribe, media tanam
+30 1186 8 | project, setup, dwc, sistem, kratky, nft, gardyn, build, update, work
+31 1123 8 | aphids, bugs, plants, spider, cat, neem, fungus, mites, plant, spray
+32 920 8 | algae, peroxide, oxygen, water, hydrogen, hydrogen peroxide, roots, plants, light, air
+33 788 8 | tower, solar, towers, tower garden, garden, hydroponic, printed, hydroponic tower, pump, hydroponics
+34 648 8 | strawberries, strawberry, plants, grow, berries, runners, growing, strawberry plants, hydroponic strawberries,
+=== src.persona.cluster 22:11:01
+   k  silhouette  bootstrap_ari_mean  bootstrap_ari_sd  ari_vs_ward  min_cluster_share
+0  2      0.0824               0.829             0.288        0.173              0.210
+1  3      0.1096               0.647             0.158        0.270              0.189
+2  4      0.1305               0.729             0.113        0.389              0.155
+3  5      0.1536               0.776             0.151        0.395              0.140
+4  6      0.1692               0.693             0.193        0.313              0.083
+5  7      0.1683               0.488             0.089        0.229              0.103
+6  8      0.1947               0.748             0.112        0.242              0.084
+k = 5 {'dominant_platform': 'youtube', 'ari_platform_balanced': 0.043, 'ari_without_dominant': 0.335, 'n_balanced': 4660, 'n_without_dominant': 17216}
+0 14099 0.4535 ['pain:COST', 'price:CHEAP_LANGUAGE', 'price:NUMERIC_PRICE', 'tech:sensor_automation_app', 'intent:COMPARISON', 'pain:KNOWLEDGE', 'intent:RECOMMENDATION', 'ctx:kit_brand']
+1 3301 0.1062 ['intent:INSPIRATION', 'pain:PLANT_HEALTH', 'intent:INFORMATION_SEEKING']
+2 4509 0.145 ['exp:BEGINNER', 'intent:INSPIRATION', 'intent:INFORMATION_SEEKING', 'intent:RECOMMENDATION']
+3 4404 0.1417 ['feat:education', 'intent:INSPIRATION', 'exp:BEGINNER', 'intent:INFORMATION_SEEKING', 'intent:RECOMMENDATION']
+4 4776 0.1536 ['intent:PROBLEM_SOLVING', 'pain:PLANT_HEALTH', 'intent:INFORMATION_SEEKING', 'ctx:kit_brand', 'intent:RECOMMENDATION', 'intent:INSPIRATION', 'exp:BEGINNER']
+=== src.reporting.analysis 22:11:41
+{
+ "gold": 93125,
+ "core": 91723,
+ "customer_voice": 91068,
+ "platforms": [
+  "bluesky",
+  "gardenweb",
+  "hackernews",
+  "lemmy",
+  "mastodon",
+  "reddit",
+  "stackexchange",
+  "youtube"
+ ],
+ "source_families": [
+  "bluesky",
+  "forums",
+  "hackernews",
+  "lemmy",
+  "mastodon",
+  "reddit",
+  "stackexchange",
+  "youtube"
+ ],
+ "languages_top": {
+  "en": 57801,
+  "id": 31139,
+  "tl": 1733,
+  "de": 313,
+  "pt": 258,
+  "es": 256,
+  "ms": 213,
+  "fi": 195
+ },
+ "date_min": "2002-01-28",
+ "date_max": "2026-10-07"
+}
+pain spearman A/B 0.99 A/C 0.987
+{"lexicon": 0.2864, "xlmr": 0.3858, "xlmr_id": 0.3228} -> xlmr
+=== DONE 22:12:08

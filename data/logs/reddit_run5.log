@@ -1,0 +1,40 @@
+== stage keyword
+  ! RD_KW_gardening_hydroponic FAILED 422
+  [RD_KW_gardening_hydroponic] 100
+  ! RD_KW_gardening_hydroponics FAILED 422
+  [RD_KW_gardening_hydroponics] 300
+  ! RD_KW_IndoorGarden_hydroponic FAILED 422
+  [RD_KW_IndoorGarden_hydroponic] 300
+  [RD_KW_IndoorGarden_hydroponics] 281
+  [RD_KW_indoorgardening_hydroponic] 277
+  [RD_KW_indoorgardening_hydroponics] 142
+  [RD_KW_homestead_hydroponic] 81
+  [RD_KW_homestead_hydroponics] 85
+  [RD_KW_indonesia_hidroponik] 9
+  [RD_KW_indonesia_hydroponic] 3
+  [RD_KW_indonesia_hydroponics] 0
+  [RD_KW_malaysia_hidroponik] 0
+  [RD_KW_malaysia_hydroponic] 3
+  [RD_KW_malaysia_hydroponics] 0
+  [RD_KW_singapore_hydroponic] 1
+  [RD_KW_singapore_hydroponics] 5
+  [RD_KW_Philippines_hydroponic] 8
+  [RD_KW_Philippines_hydroponics] 16
+  [RD_KW_microgreens_hydroponic] 153
+  [RD_KW_SmartGarden_hydroponic] 0
+  [RD_KW_SmartGarden_sensor] 0
+  [RD_KW_urbanfarming_hydroponic] 45
+== stage comments
+  trees 0/300
+  trees 25/300
+  trees 50/300
+  trees 75/300
+  trees 100/300
+  trees 125/300
+  trees 150/300
+  trees 175/300
+  trees 200/300
+  trees 225/300
+  trees 250/300
+  trees 275/300
+DONE {'keyword': (35, 1809), 'comments': (300, 1460)}

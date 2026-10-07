@@ -1,0 +1,35 @@
+=== src.nlp.run_nlp 22:13:01
+gold candidates 93473 | core scope 92066
+gold (pre-semantic-dedup) 93473
+semantic near-duplicates flagged 348
+gold after NLP 93125
+=== src.persona.cluster 22:18:25
+0  2      0.0799               0.532             0.315        0.510              0.284
+1  3      0.1095               0.726             0.106        0.247              0.184
+2  4      0.1303               0.746             0.128        0.360              0.156
+3  5      0.1578               0.560             0.122        0.181              0.118
+4  6      0.1687               0.624             0.129        0.361              0.092
+5  7      0.1854               0.534             0.106        0.112              0.092
+6  8      0.1849               0.528             0.109        0.186              0.065
+k = 4 {'dominant_platform': 'youtube', 'ari_platform_balanced': 0.135, 'ari_without_dominant': 0.46, 'n_balanced': 4660, 'n_without_dominant': 17216}
+0 5026 0.1615 ['exp:BEGINNER', 'intent:INSPIRATION', 'intent:INFORMATION_SEEKING', 'feat:education', 'intent:RECOMMENDATION']
+1 16374 0.5263 ['pain:COST', 'tech:sensor_automation_app', 'price:CHEAP_LANGUAGE', 'intent:COMPARISON', 'intent:RECOMMENDATION', 'ctx:kit_brand', 'pain:PLANT_HEALTH', 'intent:INFORMATION_SEEKING']
+2 4867 0.1564 ['feat:education', 'intent:INSPIRATION', 'intent:INFORMATION_SEEKING', 'exp:BEGINNER']
+3 4847 0.1558 ['intent:PROBLEM_SOLVING', 'pain:PLANT_HEALTH', 'intent:INFORMATION_SEEKING', 'ctx:kit_brand', 'intent:RECOMMENDATION', 'exp:BEGINNER', 'intent:INSPIRATION']
+=== src.reporting.analysis 22:18:57
+  "id": 31139,
+  "tl": 1733,
+  "de": 313,
+  "pt": 258,
+  "es": 256,
+  "ms": 213,
+  "fi": 195
+ },
+ "date_min": "2002-01-28",
+ "date_max": "2026-10-07"
+}
+pain spearman A/B 0.99 A/C 0.987
+=== src.reporting.synthesis 22:19:13
+synthesis done; hypotheses 13 contradictions 11 triangulation rows 27
+final_after_purchase_fix {"dev": {"n": 210, "pain_micro_precision": 0.288, "pain_micro_recall": 0.357, "pain_any_precision": 0.568, "pain_any_recall": 0.5, "intent_acc": 0.429, "intent_macro_f1": 0.273}, "test": {"n": 210, "pain_micro_precision": 0.271, "pain_micro_recall": 0.31, "pain_any_precision": 0.484, "pain_any_recall": 0.357, "intent_acc": 0.448, "intent_macro_f1": 0.285}}
+=== DONE 22:19:18
