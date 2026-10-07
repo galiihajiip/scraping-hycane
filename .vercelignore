@@ -1,0 +1,8 @@
+# Exclude heavy pipeline and backend files from Vercel deployment
+requirements.txt
+run_pipeline.sh
+src/
+data/
+config/
+tests/
+*.md
