@@ -1,0 +1,40 @@
+{
+ "n": 420,
+ "by_platform": {
+  "youtube": 203,
+  "reddit": 45,
+  "gardenweb": 40,
+  "bluesky": 27,
+  "lemmy": 27,
+  "hackernews": 27,
+  "mastodon": 26,
+  "stackexchange": 25
+ },
+ "by_language": {
+  "en": 242,
+  "id": 173,
+  "other": 5
+ },
+ "by_predicted_sentiment": {
+  "NEGATIVE": 110,
+  "POSITIVE": 107,
+  "NEUTRAL": 81,
+  "AMBIGUOUS": 63,
+  "MIXED": 59
+ },
+ "by_conf_band": {
+  ".5-.7": 180,
+  ".7-.9": 94,
+  ">=.9": 82,
+  "<.5": 64
+ },
+ "edge_case_counts": {
+  "id_negation": 45,
+  "id_slang": 30,
+  "sarcasm_cue": 22,
+  "en_negation": 101,
+  "emoji_heavy": 37,
+  "technical_shorthand": 86,
+  "code_switch": 21
+ }
+}
