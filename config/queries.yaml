@@ -1,0 +1,50 @@
+# Query taxonomy from 03_QUERY_TAXONOMY.md. Each query gets a stable ID: {cluster}{lang}{index}.
+# Platforms use the subset they support (keyword search vs hashtag vs subreddit filter).
+clusters:
+  A_core:
+    id: hydroponics core
+    id_terms: [hidroponik, tanaman hidroponik, sayur hidroponik]
+    en_terms: [hydroponics, hydroponic gardening, hydroponic garden]
+  B_beginner:
+    id_terms: [hidroponik pemula, belajar hidroponik, mulai hidroponik, cara hidroponik]
+    en_terms: [beginner hydroponics, hydroponics beginner, new to hydroponics, first hydroponic]
+  C_interest:
+    id_terms: [pengen hidroponik, mau hidroponik, ingin hidroponik]
+    en_terms: [hydroponics at home, want to start hydroponics, thinking about hydroponics]
+  D_failure:
+    id_terms: [hidroponik gagal, tanaman hidroponik mati, daun kuning hidroponik, akar busuk hidroponik]
+    en_terms: [hydroponic failure, hydroponic problems, root rot hydroponic, hydroponic yellow leaves, gave up hydroponics]
+  E_nutrients:
+    id_terms: [pH hidroponik, TDS hidroponik, EC hidroponik, ppm hidroponik, nutrisi hidroponik, AB mix]
+    en_terms: [hydroponic pH, hydroponic EC, hydroponic ppm, hydroponic nutrients, pH drift hydroponic]
+  F_water_env:
+    id_terms: [air hidroponik, suhu air hidroponik, oksigen hidroponik, aerator hidroponik]
+    en_terms: [water temperature hydroponics, hydroponic water level, hydroponic air pump, reservoir temperature]
+  G_iot:
+    id_terms: [sensor hidroponik, monitoring hidroponik, hidroponik otomatis, IoT hidroponik, hidroponik pintar]
+    en_terms: [smart hydroponic, hydroponic automation, hydroponic sensor, hydroponic controller, hydroponic monitoring, pH sensor hydroponic]
+  H_ai:
+    id_terms: [AI hidroponik]
+    en_terms: [AI hydroponics, AI garden, machine learning hydroponics, smart garden app]
+  I_purchase:
+    id_terms: [beli hidroponik, kit hidroponik, harga kit hidroponik, rekomendasi kit hidroponik, paket hidroponik]
+    en_terms: [buy hydroponic kit, hydroponic kit, hydroponic kit worth it, aerogarden worth it, best hydroponic system]
+  J_sustainability:
+    id_terms: [hidroponik berkelanjutan, media tanam ramah lingkungan]
+    en_terms: [sustainable hydroponics, biodegradable growing media, rockwool alternative, rockwool environment]
+  K_bagasse:
+    id_terms: [ampas tebu media tanam, limbah tebu, ampas tebu]
+    en_terms: [sugarcane bagasse, bagasse growing media, bagasse hydroponics, bagasse substrate]
+  L_space:
+    id_terms: [hidroponik lahan sempit, hidroponik balkon, hidroponik rumah, hidroponik kos]
+    en_terms: [urban gardening hydroponic, small space hydroponics, apartment hydroponics, balcony hydroponics]
+  M_experience:
+    id_terms: [pengalaman hidroponik, kesalahan hidroponik pemula, tips hidroponik]
+    en_terms: [hydroponic beginner mistakes, lessons learned hydroponics, hydroponics not worth it]
+  N_product:
+    id_terms: []
+    en_terms: [aerogarden, click and grow, lettuce grow, gardyn, rise gardens, kratky]
+mastodon_hashtags: [hydroponics, hydroponic, hidroponik, aerogarden, kratky, indoorgardening, urbanfarming]
+expansion:
+  enabled: true
+  note: "Iterative expansion terms are appended by src/discovery/expand_queries.py and logged in data/manifests/query_expansion_log.csv"
