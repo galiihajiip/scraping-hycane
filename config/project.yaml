@@ -1,0 +1,43 @@
+project: HYCANE Global Hydroponic Customer Intelligence Research
+version: 1.0.0
+competition: BPC RISE 2026
+theme: "From Vision to Venture: Membangun Bisnis yang Inovatif dan Berkelanjutan"
+subtheme: "Agroteknologi & Ketahanan Pangan"
+targets:
+  minimum_records: 5000
+  preferred_records: 10000
+  stretch_records: 20000
+layers: [raw, bronze, silver, gold, insight]
+paths:
+  raw: data/raw
+  bronze: data/bronze
+  silver: data/silver
+  gold: data/gold
+  manifests: data/manifests
+  logs: data/logs
+  checkpoints: data/checkpoints
+  outputs: outputs
+http:
+  user_agent: "hycane-research/1.0 (non-commercial academic social-listening study; contact via project maintainer)"
+  timeout_s: 40
+  max_retries: 6
+  backoff_base_s: 3
+random_seed: 42
+privacy:
+  hash_authors: true
+  author_hash_salt_env: AUTHOR_HASH_SALT
+  store_author_handles: false
+hypotheses:
+  H01: Urban/home growers are a core interested segment
+  H02: Hydroponic beginners are a core segment with recurring friction
+  H03: Age 20-40 is the core age band
+  H04: Indonesia (Java priority) shows active hydroponic discourse
+  H05: Middle-market price positioning is acceptable
+  H06: Technology / smart-farming interest is present
+  H07: Sustainability interest is a purchase driver
+  H08: Schools/universities/communities are a secondary segment
+  H09: B2B (urban farms, restaurants, hotels, SMEs) is a viable segment
+  H10: Sugarcane bagasse media is customer-relevant value
+  H11: Users want monitoring of pH/EC/TDS/temperature/water level
+  H12: Users want AI recommendations / anomaly detection
+  H13: Users accept app + subscription model
