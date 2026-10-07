@@ -1,0 +1,16 @@
+{
+ "sentiment_candidates": {
+  "xlmr": "cardiffnlp/twitter-xlm-roberta-base-sentiment",
+  "indo": "w11wo/indonesian-roberta-base-sentiment-classifier",
+  "zeroshot": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+  "lexicon": "vaderSentiment 3.3.2 + custom Indonesian lexicon v1",
+  "mixed_threshold": 0.25,
+  "ambiguous_threshold": 0.5
+ },
+ "sentiment_production_model": "xlmr",
+ "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+ "language_detector": "lingua-language-detector (29 languages, preloaded)",
+ "rule_taxonomy": "config/taxonomy.yaml",
+ "validation_reference": "LLM reference labels (Claude, in-session) \u2014 NOT human-verified",
+ "validation_n": 420
+}
