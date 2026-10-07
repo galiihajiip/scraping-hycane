@@ -1,0 +1,96 @@
+# Source families, access methods, and collection caps. Status is determined at runtime by the source audit.
+sources:
+  reddit:
+    family: reddit
+    access: "Arctic Shift public Reddit archive API (third-party research archive); official Reddit OAuth API preferred when REDDIT_CLIENT_ID is set"
+    base_url: https://arctic-shift.photon-reddit.com
+    min_interval_s: 2.5
+    subreddits_full:          # topic-specific communities: sample posts by month, then comment trees
+      - Hydroponics
+      - hydro
+      - kratky
+      - aerogarden
+      # DWC dropped mid-run (2026-10-08): community is predominantly cannabis-oriented (out of core scope)
+      - HydroponicGardening
+      - ClickAndGrow
+    subreddits_keyword:       # general communities: keyword-filtered posts only
+      gardening: [hydroponic, hydroponics]
+      IndoorGarden: [hydroponic, hydroponics]
+      indoorgardening: [hydroponic, hydroponics]
+      homestead: [hydroponic, hydroponics]
+      indonesia: [hidroponik, hydroponic, hydroponics]
+      malaysia: [hidroponik, hydroponic, hydroponics]
+      singapore: [hydroponic, hydroponics]
+      Philippines: [hydroponic, hydroponics]
+      microgreens: [hydroponic]
+      SmartGarden: [hydroponic, sensor]
+      urbanfarming: [hydroponic]
+    posts_per_window: 100   # quarterly windows
+    comment_threads_max: 300   # reduced 2026-10-08 after YouTube API added ~83k records
+    comments_per_thread_cap: 40
+  bluesky:
+    family: bluesky
+    access: "Bluesky public AppView API app.bsky.feed.searchPosts (unauthenticated)"
+    base_url: https://api.bsky.app/xrpc
+    min_interval_s: 1.0
+    max_pages_per_query: 15
+  mastodon:
+    family: mastodon
+    access: "Mastodon public hashtag timeline API (unauthenticated)"
+    instances: [mastodon.social, mstdn.social, fosstodon.org, mastodon.online, mas.to]
+    hashtags: [hydroponics, hydroponic, hydroponik, hidroponik, aerogarden, kratky, indoorgardening]
+    max_pages_per_tag: 20
+    min_interval_s: 1.0
+  lemmy:
+    family: lemmy
+    access: "Lemmy public search API v3"
+    instances: [lemmy.world, lemmy.ml, sh.itjust.works, slrpnk.net]
+    min_interval_s: 1.0
+  hackernews:
+    family: hackernews
+    access: "HN Algolia official search API"
+    min_interval_s: 0.5
+  stackexchange:
+    family: stackexchange
+    access: "Stack Exchange API v2.3 (gardening.stackexchange.com, CC BY-SA)"
+    min_interval_s: 1.0
+  forums_gardenweb:
+    family: forums
+    access: "Houzz/GardenWeb public discussion HTML (robots.txt-compliant paths only)"
+    min_interval_s: 4.0
+  forums_kaskus:
+    family: forums
+    access: "Kaskus public thread HTML (robots.txt-compliant paths only)"
+    min_interval_s: 4.0
+  youtube:
+    family: youtube
+    access: "YouTube Data API v3 (requires YOUTUBE_API_KEY); HTML/internal endpoints NOT used"
+    requires: [YOUTUBE_API_KEY]
+  x:
+    family: x
+    access: "X API v2 (requires X_BEARER_TOKEN with search access)"
+    requires: [X_BEARER_TOKEN]
+  tiktok:
+    family: tiktok
+    access: "TikTok Research API (requires approved research access)"
+    requires: [TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET]
+  instagram:
+    family: instagram
+    access: "Meta Graph API (requires META_ACCESS_TOKEN with permissions)"
+    requires: [META_ACCESS_TOKEN]
+  facebook:
+    family: facebook
+    access: "Meta Graph API / Content Library (requires approval)"
+    requires: [META_ACCESS_TOKEN]
+  threads:
+    family: threads
+    access: "Threads API (requires THREADS_ACCESS_TOKEN)"
+    requires: [THREADS_ACCESS_TOKEN]
+  marketplace:
+    family: marketplace
+    access: "Tokopedia/Shopee/Amazon public reviews — no permitted public review API; anti-bot protected"
+    requires: [PERMITTED_MARKETPLACE_ACCESS]
+academic:
+  openalex: {base_url: https://api.openalex.org, min_interval_s: 0.3}
+  crossref: {base_url: https://api.crossref.org, min_interval_s: 0.5}
+  semantic_scholar: {base_url: https://api.semanticscholar.org/graph/v1, min_interval_s: 3.5}
