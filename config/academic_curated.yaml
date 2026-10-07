@@ -1,0 +1,132 @@
+# Curated academic evidence: abstracts read in-session on 2026-10-08 from data/gold/academic_evidence.parquet.
+# "finding" paraphrases the abstract only; full texts were not read. Limitations are stated per item.
+- id: W4412063293
+  cite: "JISA (2025). IoT Implementation for Hydroponic Water Monitoring Using Web-Based pH and TDS Sensors with Node-Red. doi:10.31326/jisa.v8i1.2209"
+  domain: iot_monitoring
+  method: system development + black-box testing
+  context: Urban hydroponics, Jakarta
+  finding: "States that pH/TDS consistency is often managed manually, which is ineffective and error-prone; builds an offline-capable ESP32 pH/TDS monitor; notes many IoT solutions depend on cloud/mobile platforms that limit offline accessibility."
+  limitation: "No user study; functional testing only."
+  supports: [PH, EC_TDS, SOFTWARE]
+  strength: E4
+- id: W4210357512
+  cite: "Technologies (2022). Reliable IoT-Based Monitoring and Control of Hydroponic Systems (iPONICS). doi:10.3390/technologies10010026"
+  domain: iot_monitoring
+  method: system development + reliability analysis
+  context: Hydroponic greenhouses
+  finding: "Low-cost IoT nodes monitor water quality and climate with remote web monitoring; fault-tolerant design for off-grid operation."
+  limitation: "Greenhouse/commercial context; no adoption data."
+  supports: [SENSOR, AUTOMATION, EQUIPMENT]
+  strength: E5
+- id: W7115687377
+  cite: "Pelita Eksakta (2025). Application of IoT-Based pH and TDS Sensors … at Blasta Hidroponik (Padang). doi:10.24036/pelitaeksakta/vol8-iss2/296"
+  domain: iot_monitoring
+  method: community-service implementation, pre/post evaluation
+  context: One ~200 m2 hydroponic business, Indonesia
+  finding: "Reports daily monitoring time cut from ~3 h to ~30 min and productivity gains after IoT pH/TDS deployment."
+  limitation: "Single case, non-experimental, self-reported outcomes; commercial (B2B) not home context."
+  supports: [TIME, PH, EC_TDS]
+  strength: E4
+- id: W4414415519
+  cite: "International Journal of Vegetable Science (2025). Yield and nutrient use efficiency of lettuce at different EC levels. doi:10.1080/19315260.2025.2564829"
+  domain: nutrients_ph_ec
+  method: randomized block experiment
+  context: Tropical conditions, lettuce
+  finding: "EC between ~0.9 and 1.4 dS/m gave the highest biomass; excessive EC raises saline stress; EC 1.3 dS/m recommended."
+  limitation: "Single crop/site."
+  supports: [EC_TDS, NUTRIENTS]
+  strength: E5
+- id: W4388723157
+  cite: "Canadian Journal of Plant Science (2023). Nutrient solution management strategies in hydroponic systems (review). doi:10.1139/cjps-2023-0034"
+  domain: nutrients_ph_ec
+  method: review
+  context: Hydroponic systems generally
+  finding: "Hydroponics yields more than conventional agriculture despite higher energy consumption; EC alone may not give precise ion information, risking poor yields or excess fertilizer; ion-selective sensors are an alternative."
+  limitation: "Narrative review."
+  supports: [EC_TDS, NUTRIENTS, SENSOR, SUSTAINABILITY]
+  strength: E5
+- id: W3196365168
+  cite: "Horticulturae (2021). Optimal EC of nutrient solution for lettuce and basil in vertical farming. doi:10.3390/horticulturae7090283"
+  domain: nutrients_ph_ec
+  method: experiment
+  context: Vertical farming
+  finding: "Optimal EC matters to avoid nutrient loss and deficiency."
+  limitation: "Abstract truncated in index."
+  supports: [EC_TDS]
+  strength: E5
+- id: W7160388792
+  cite: "Multidisciplinary Reviews (2026). Urban farming, poor households, and family food security (Surabaya). doi:10.31893/multirev.2026499"
+  domain: indonesia_context
+  method: mixed methods, 150 households (75 farming / 75 not), low-income neighbourhoods
+  context: Surabaya, Indonesia
+  finding: "Urban farming improves dietary quality and resilience; adoption constrained by spatial limitations, financial barriers, inadequate technical knowledge and sociocultural stigma."
+  limitation: "Purposive sample of low-income households; not hydroponics-specific."
+  supports: [SPACE, COST, KNOWLEDGE]
+  strength: E5
+- id: W4416825938
+  cite: "Agro Bali (2025). Role of the millennial generation in urban farming, Malang. doi:10.37637/ab.v8i3.2393"
+  domain: indonesia_context
+  method: survey, n=210 millennial farmers aged 25-40, PLS-SEM
+  context: Malang Regency, East Java
+  finding: "Entrepreneurial ability, digital technology competence, ecosystem support, sustainability awareness and technical knowledge predict innovation adoption; NFT vertical hydroponics and IoT smart greenhouse cited as models."
+  limitation: "Sample restricted to age 25-40 by design (cannot test the age hypothesis); farmers, not home hobbyists; very high R2 warrants caution."
+  supports: [KNOWLEDGE, AUTOMATION, SUSTAINABILITY]
+  strength: E4
+- id: W7203544811
+  cite: "Jambura Agribusiness Journal (2026). Edufarming communication strategy for AIoT hydroponics (SGH Hydroponic, Gowa). doi:10.37046/jaj.v7i2.38587"
+  domain: beginner_knowledge
+  method: qualitative single case
+  context: South Sulawesi, Indonesia
+  finding: "Diffusion of AIoT hydroponics happened through demonstrations, hands-on practice, interpersonal communication and group learning; education works as a market channel."
+  limitation: "Single case, five informants."
+  supports: [KNOWLEDGE, SUPPORT]
+  strength: E4
+- id: W7124698067
+  cite: "Urban Agriculture & Regional Food Systems (2026). Viability of hydroponics for low-income farmers, Cape Town. doi:10.1002/uar2.70036"
+  domain: adoption_barriers
+  method: surveys + interviews
+  context: Low-income urban areas, South Africa
+  finding: "Perceived benefits (yield, water, land) but high setup costs and limited support make hydroponics not yet viable at scale for low-income users."
+  limitation: "Non-Indonesian context."
+  supports: [COST]
+  strength: E5
+- id: W4293085516
+  cite: "Agronomy (2022). Coconut fiber and bagasse-based substrates with beneficial microorganisms for soilless tomato. doi:10.3390/agronomy12040767"
+  domain: growing_media_bagasse
+  method: experiment
+  context: Soilless tomato, Europe
+  finding: "Tests recycled coconut fibre + bagasse substrates (with AMF/Trichoderma/Pseudomonas) for soilless cultivation — the closest peer-reviewed analogue to HYCANE/CaneBioKit media."
+  limitation: "Abstract truncated; tomato substrate culture, not leafy-green water culture."
+  supports: [MEDIA, SUSTAINABILITY]
+  strength: E5
+- id: W4385075181
+  cite: "Procedia of Engineering and Life Science (2023). Sugarcane bagasse and tea in growing media for red lettuce. doi:10.21070/pels.v4i0.1413"
+  domain: growing_media_bagasse
+  method: RBD experiment (soil mixes)
+  context: Indonesia
+  finding: "Bagasse tested as a partial soil replacement; the abstract reports effects for the tea-waste combination, not a clear bagasse benefit."
+  limitation: "Soil-based mixes, not hydroponics."
+  supports: [MEDIA]
+  strength: E4
+- id: W4390103616
+  cite: "Plants (2023). Date palm waste as an alternative to rockwool for sweet pepper. doi:10.3390/plants13010044"
+  domain: growing_media_bagasse
+  method: greenhouse experiment
+  context: Soilless culture
+  finding: "Agricultural-waste substrate matched rockwool on total yield and fruit quality, with fewer unmarketable fruits — evidence that waste-based media can substitute rockwool technically."
+  limitation: "Different waste material and crop."
+  supports: [MEDIA, SUSTAINABILITY]
+  strength: E5
+- id: W1985435302
+  cite: "NZ Journal of Crop and Horticultural Science (2004). Rockwool in horticulture and its sustainable use. doi:10.1080/01140671.2004.9514277"
+  domain: sustainability
+  method: review
+  context: New Zealand
+  finding: "Discusses rockwool disposal and reuse options as a sustainability issue."
+  limitation: "Old; national context."
+  supports: [MEDIA, SUSTAINABILITY]
+  strength: E5
+- coverage_notes:
+    - "No peer-reviewed study in the 677-work index tests sugarcane bagasse as a hydroponic (water-culture) seedling medium; most bagasse hits are mushroom substrates, soil amendments, or ash/biochar. Bagasse-media efficacy for HYCANE is therefore an open technical question (lab validation needed)."
+    - "Most Indonesian IoT-hydroponics papers are system builds or community-service reports without controlled user evaluation; they show technical feasibility, not demand."
+    - "No academic source in the index measures home growers' willingness to pay for IoT/AI hydroponic kits in Indonesia."
