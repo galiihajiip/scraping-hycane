@@ -1,0 +1,163 @@
+{
+ "H01": {
+  "metric": "records with home/indoor/small-space context",
+  "n": 3908,
+  "pct": 4.29,
+  "platforms": 8,
+  "contrast": "PROFESSIONAL_COMMERCIAL signal n=1875"
+ },
+ "H02": {
+  "metric": "beginner/never-tried among records with an explicit experience signal",
+  "n": 11135,
+  "pct": 84.13,
+  "denominator": 13235,
+  "beginner_problem_solving_pct": 10.87,
+  "nonbeginner_problem_solving_pct": 10.0,
+  "platforms": 8
+ },
+ "H03": {
+  "metric": "explicit self-reported age",
+  "n": 10,
+  "pct": 0.011,
+  "ages_in_20_40": 3,
+  "ages_reported": 8,
+  "note": "Age is not inferred from writing style; only explicit self-reports are counted."
+ },
+ "H04": {
+  "metric": "Indonesian-language customer-voice records",
+  "n": 30703,
+  "pct": 33.71,
+  "platforms": 4,
+  "indonesia_community_context": 76,
+  "java_mentions": 182
+ },
+ "H05": {
+  "metric": "price language",
+  "objection": 292,
+  "cheap": 2256,
+  "premium": 455,
+  "question": 1156,
+  "subscription": 859,
+  "cost_pain": 1925,
+  "diy_cheaper_contradiction": 42
+ },
+ "H06": {
+  "metric": "records discussing sensors/automation/app/AI",
+  "n": 3954,
+  "pct": 4.34,
+  "platforms": 8,
+  "aspect_sentiment": {
+   "sensors": {
+    "POSITIVE": 6.33,
+    "NEGATIVE": 12.35,
+    "n": 1944
+   },
+   "automation": {
+    "POSITIVE": 13.43,
+    "NEGATIVE": 10.26,
+    "n": 1511
+   },
+   "software_app": {
+    "POSITIVE": 13.51,
+    "NEGATIVE": 14.04,
+    "n": 570
+   },
+   "AI": {
+    "POSITIVE": 22.48,
+    "NEGATIVE": 22.87,
+    "n": 258
+   }
+  },
+  "anti_automation": 189
+ },
+ "H07": {
+  "metric": "sustainability signal",
+  "any_n": 6683,
+  "any_pct": 7.34,
+  "positive_n": 591,
+  "skeptical_n": 113,
+  "purchase_records": 813,
+  "purchase_with_sustainability": 87,
+  "purchase_with_sustainability_pct": 10.7,
+  "purchase_with_cost_or_price_pct": 33.21
+ },
+ "H08": {
+  "metric": "school/education/community-institution context",
+  "n": 724,
+  "pct": 0.8,
+  "platforms": 8
+ },
+ "H09": {
+  "metric": "B2B/commercial context (restaurants, hotels, markets, commercial growers)",
+  "n": 341,
+  "pct": 0.37,
+  "platforms": 8,
+  "professional_signal": 1875
+ },
+ "H10": {
+  "metric": "bagasse/ampas tebu mentions",
+  "customer_voice": 18,
+  "all_gold": 18,
+  "media_terms": {
+   "rockwool": 1044,
+   "coco": 1049,
+   "perlite": 572,
+   "clay_pebbles": 715,
+   "sponge": 687,
+   "peat": 295,
+   "rapid_rooter": 66,
+   "biodegradable": 9,
+   "bagasse": 18
+  },
+  "rockwool_concern": 159
+ },
+ "H11": {
+  "metric": "monitoring features",
+  "mentions": 1700,
+  "explicit": 91,
+  "pain_ph_ec_nutrients": 2519,
+  "sensor_distrust": 8,
+  "classes": {
+   "ph_monitoring": "EXPLICIT_REQUEST",
+   "tds_ec_monitoring": "EXPLICIT_REQUEST",
+   "temperature_monitoring": "STRONG_INFERRED",
+   "water_level_monitoring": "STRONG_INFERRED",
+   "alerts": "STRONG_INFERRED"
+  }
+ },
+ "H12": {
+  "metric": "AI features",
+  "mentions": 404,
+  "explicit": 23,
+  "ai_aspect": {
+   "AMBIGUOUS": 12.79,
+   "MIXED": 4.26,
+   "NEGATIVE": 22.87,
+   "NEUTRAL": 37.6,
+   "POSITIVE": 22.48,
+   "n": 258.0
+  },
+  "ai_skepticism": 3,
+  "classes": {
+   "ai_anomaly_detection": "STRONG_INFERRED",
+   "recommendations": "STRONG_INFERRED",
+   "diagnostics": "EXPLICIT_REQUEST"
+  }
+ },
+ "H13": {
+  "metric": "app & subscription",
+  "app_dislike": 8,
+  "subscription_dislike": 21,
+  "subscription_mentions": 859,
+  "app_aspect": {
+   "AMBIGUOUS": 10.18,
+   "MIXED": 2.11,
+   "NEGATIVE": 14.04,
+   "NEUTRAL": 60.18,
+   "POSITIVE": 13.51,
+   "n": 570.0
+  },
+  "remote_app_mentions": 58,
+  "dashboard_mentions": 360
+ }
+}

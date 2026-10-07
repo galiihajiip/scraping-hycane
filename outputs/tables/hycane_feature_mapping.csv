@@ -1,0 +1,22 @@
+pain_point,count,job,desired_outcome,features,hycane_component,business_value,hycane_relevance
+PLANT_HEALTH,4754,Know what is wrong with my plant,Early diagnosis and correct fix,diagnostics|ai_anomaly_detection|recommendations|community,AI analysis + education/community,Engagement + premium AI features,0.7
+COST,1925,Grow affordably,Acceptable upfront and running cost,,Pricing/packaging (not a feature),Price risk; middle-market positioning must be validated,0.5
+KNOWLEDGE,1688,Learn hydroponics without being overwhelmed,Confidence to start and succeed,beginner_mode|education|community|recommendations,App guided cultivation + education + community,Beginner onboarding; workshops,0.8
+NUTRIENTS,1393,Feed plants correctly and diagnose deficiencies,Healthy growth without guesswork,tds_ec_monitoring|recommendations|diagnostics|education,AI recommendations + nutrient consumables,Recurring revenue (nutrients) + guidance,0.8
+EQUIPMENT,977,Have reliable hardware,No pump/leak failures,alerts|water_level_monitoring,Kit QC + water-level alert + after-sales,Warranty/after-sales; reliability is a trust driver,0.6
+PH,687,Keep nutrient solution in the right pH range,Stable pH without constant manual testing,ph_monitoring|alerts|recommendations|trend_history,IoT pH sensor + AI alert/recommendation,Core hardware differentiation; reduces most-cited chemistry failure,1.0
+AUTOMATION,511,Automate routine tasks,Less manual work,automation_dosing|alerts|remote_app_control,IoT + (future) dosing,Premium tier candidate,0.7
+TEMPERATURE,459,Keep root zone/water cool enough,Avoid heat-driven root rot,temperature_monitoring|alerts,Water temperature sensor + alert,Relevant to tropical Indonesian conditions (hypothesis),0.9
+EC_TDS,439,Dose nutrients at the right strength,Correct nutrient concentration at each growth stage,tds_ec_monitoring|alerts|recommendations,IoT TDS/EC sensor + dosing recommendation,Core sensing value; links to nutrient consumable sales,1.0
+WATER,355,Keep reservoir topped up and water quality acceptable,No dry-outs or neglected reservoirs,water_level_monitoring|alerts|reminders,Water-level sensor + reminder,Reduces failure while away,0.8
+MEDIA,340,Use a growing medium that works and is not wasteful,Good germination/rooting; less waste,biodegradable_media,Bagasse-based biodegradable media,Consumable revenue + sustainability story,0.9
+SETUP,313,Get a working system quickly,Plug-and-play start,beginner_mode|education,Pre-assembled kit + guides,Kit sales,0.6
+OXYGEN,242,Keep roots oxygenated,No suffocation/root rot,alerts|diagnostics,Not directly sensed (no DO sensor in concept); pump-failure inference possible,Gap: DO not monitored,0.4
+SUSTAINABILITY,220,Grow in an environmentally responsible way,Less plastic/rockwool/energy waste,biodegradable_media,Bagasse media + circular-economy narrative,Competition-theme fit; customer salience to be tested,0.6
+SENSOR,113,Trust my readings,"Accurate, low-calibration sensing",ph_monitoring|tds_ec_monitoring,Sensor quality/calibration routine,Risk: sensor distrust can undermine core value,0.9
+TIME,95,Grow without daily babysitting,Low-maintenance routine,alerts|reminders|automation_dosing|remote_app_control,Monitoring + alerts,Convenience positioning,0.7
+SOFTWARE,92,Use an app that just works,"Reliable connectivity, no lock-in",dashboard|remote_app_control,Mobile app,Risk: app failure/lock-in complaints,0.7
+LIGHT,84,Give plants enough light,"Non-leggy, productive plants",education|diagnostics,Not in HYCANE concept (no lighting),Gap: lighting not addressed,0.3
+SUPPORT,31,Get help when something breaks,Responsive after-sales,community|education,Customer service + community,Retention,0.6
+AI,22,Get smart advice,"Correct, explainable recommendations",ai_anomaly_detection|recommendations,AI layer,Premium subscription candidate (unvalidated),0.6
+SPACE,9,Grow food in a small urban space,"Compact, clean indoor/balcony system",beginner_mode,Compact kit form factor,Urban segment fit,0.6

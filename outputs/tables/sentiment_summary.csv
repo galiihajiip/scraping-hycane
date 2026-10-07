@@ -1,0 +1,6 @@
+sentiment,n,pct,denominator,scope
+NEUTRAL,32242,35.4,91068,customer_voice_core
+POSITIVE,23127,25.4,91068,customer_voice_core
+AMBIGUOUS,15794,17.34,91068,customer_voice_core
+NEGATIVE,14541,15.97,91068,customer_voice_core
+MIXED,5364,5.89,91068,customer_voice_core

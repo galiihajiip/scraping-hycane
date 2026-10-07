@@ -1,0 +1,1041 @@
+{
+ "reference": "LLM reference labels (Claude, in-session) \u2014 NOT human-verified",
+ "n_reference": 420,
+ "sentiment": {
+  "lexicon": {
+   "five_class": {
+    "n": 420,
+    "accuracy": 0.5524,
+    "macro_f1": 0.2864,
+    "per_class": {
+     "POSITIVE": {
+      "precision": 0.452,
+      "recall": 0.576,
+      "f1-score": 0.507,
+      "support": 132.0
+     },
+     "NEUTRAL": {
+      "precision": 0.658,
+      "recall": 0.638,
+      "f1-score": 0.647,
+      "support": 229.0
+     },
+     "NEGATIVE": {
+      "precision": 0.37,
+      "recall": 0.222,
+      "f1-score": 0.278,
+      "support": 45.0
+     },
+     "MIXED": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 14.0
+     },
+     "AMBIGUOUS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+     }
+    },
+    "confusion_matrix": {
+     "labels": [
+      "POSITIVE",
+      "NEUTRAL",
+      "NEGATIVE",
+      "MIXED",
+      "AMBIGUOUS"
+     ],
+     "matrix": [
+      [
+       76,
+       50,
+       6,
+       0,
+       0
+      ],
+      [
+       71,
+       146,
+       10,
+       2,
+       0
+      ],
+      [
+       12,
+       22,
+       10,
+       1,
+       0
+      ],
+      [
+       9,
+       4,
+       1,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ]
+    }
+   },
+   "three_class": {
+    "n": 420,
+    "accuracy": 0.5667,
+    "macro_f1": 0.478,
+    "per_class": {
+     "POSITIVE": {
+      "precision": 0.452,
+      "recall": 0.576,
+      "f1-score": 0.507,
+      "support": 132.0
+     },
+     "NEUTRAL": {
+      "precision": 0.676,
+      "recall": 0.626,
+      "f1-score": 0.65,
+      "support": 243.0
+     },
+     "NEGATIVE": {
+      "precision": 0.37,
+      "recall": 0.222,
+      "f1-score": 0.278,
+      "support": 45.0
+     }
+    },
+    "confusion_matrix": {
+     "labels": [
+      "POSITIVE",
+      "NEUTRAL",
+      "NEGATIVE"
+     ],
+     "matrix": [
+      [
+       76,
+       50,
+       6
+      ],
+      [
+       80,
+       152,
+       11
+      ],
+      [
+       12,
+       23,
+       10
+      ]
+     ]
+    }
+   },
+   "slices": {
+    "id_negation": {
+     "n": 45,
+     "acc5": 0.644,
+     "acc3": 0.689
+    },
+    "id_slang": {
+     "n": 30,
+     "acc5": 0.7,
+     "acc3": 0.7
+    },
+    "sarcasm_cue": {
+     "n": 22,
+     "acc5": 0.455,
+     "acc3": 0.455
+    },
+    "en_negation": {
+     "n": 101,
+     "acc5": 0.446,
+     "acc3": 0.446
+    },
+    "emoji_heavy": {
+     "n": 37,
+     "acc5": 0.459,
+     "acc3": 0.486
+    },
+    "technical_shorthand": {
+     "n": 86,
+     "acc5": 0.488,
+     "acc3": 0.488
+    },
+    "code_switch": {
+     "n": 21,
+     "acc5": 0.667,
+     "acc3": 0.667
+    },
+    "lang_en": {
+     "n": 242,
+     "macro_f1_5": 0.274,
+     "acc3": 0.517
+    },
+    "lang_id": {
+     "n": 173,
+     "macro_f1_5": 0.294,
+     "acc3": 0.642
+    }
+   }
+  },
+  "xlmr": {
+   "five_class": {
+    "n": 420,
+    "accuracy": 0.5024,
+    "macro_f1": 0.3858,
+    "per_class": {
+     "POSITIVE": {
+      "precision": 0.844,
+      "recall": 0.614,
+      "f1-score": 0.711,
+      "support": 132.0
+     },
+     "NEUTRAL": {
+      "precision": 0.873,
+      "recall": 0.419,
+      "f1-score": 0.566,
+      "support": 229.0
+     },
+     "NEGATIVE": {
+      "precision": 0.403,
+      "recall": 0.644,
+      "f1-score": 0.496,
+      "support": 45.0
+     },
+     "MIXED": {
+      "precision": 0.1,
+      "recall": 0.357,
+      "f1-score": 0.156,
+      "support": 14.0
+     },
+     "AMBIGUOUS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+     }
+    },
+    "confusion_matrix": {
+     "labels": [
+      "POSITIVE",
+      "NEUTRAL",
+      "NEGATIVE",
+      "MIXED",
+      "AMBIGUOUS"
+     ],
+     "matrix": [
+      [
+       81,
+       9,
+       6,
+       17,
+       19
+      ],
+      [
+       14,
+       96,
+       33,
+       23,
+       63
+      ],
+      [
+       0,
+       3,
+       29,
+       5,
+       8
+      ],
+      [
+       1,
+       2,
+       4,
+       5,
+       2
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ]
+    }
+   },
+   "three_class": {
+    "n": 420,
+    "accuracy": 0.7167,
+    "macro_f1": 0.6593,
+    "per_class": {
+     "POSITIVE": {
+      "precision": 0.844,
+      "recall": 0.614,
+      "f1-score": 0.711,
+      "support": 132.0
+     },
+     "NEUTRAL": {
+      "precision": 0.758,
+      "recall": 0.786,
+      "f1-score": 0.772,
+      "support": 243.0
+     },
+     "NEGATIVE": {
+      "precision": 0.403,
+      "recall": 0.644,
+      "f1-score": 0.496,
+      "support": 45.0
+     }
+    },
+    "confusion_matrix": {
+     "labels": [
+      "POSITIVE",
+      "NEUTRAL",
+      "NEGATIVE"
+     ],
+     "matrix": [
+      [
+       81,
+       45,
+       6
+      ],
+      [
+       15,
+       191,
+       37
+      ],
+      [
+       0,
+       16,
+       29
+      ]
+     ]
+    }
+   },
+   "slices": {
+    "id_negation": {
+     "n": 45,
+     "acc5": 0.556,
+     "acc3": 0.778
+    },
+    "id_slang": {
+     "n": 30,
+     "acc5": 0.7,
+     "acc3": 0.833
+    },
+    "sarcasm_cue": {
+     "n": 22,
+     "acc5": 0.318,
+     "acc3": 0.636
+    },
+    "en_negation": {
+     "n": 101,
+     "acc5": 0.267,
+     "acc3": 0.663
+    },
+    "emoji_heavy": {
+     "n": 37,
+     "acc5": 0.676,
+     "acc3": 0.784
+    },
+    "technical_shorthand": {
+     "n": 86,
+     "acc5": 0.442,
+     "acc3": 0.709
+    },
+    "code_switch": {
+     "n": 21,
+     "acc5": 0.429,
+     "acc3": 0.762
+    },
+    "lang_en": {
+     "n": 242,
+     "macro_f1_5": 0.305,
+     "acc3": 0.624
+    },
+    "lang_id": {
+     "n": 173,
+     "macro_f1_5": 0.509,
+     "acc3": 0.838
+    }
+   }
+  },
+  "xlmr_id": {
+   "five_class": {
+    "n": 420,
+    "accuracy": 0.431,
+    "macro_f1": 0.3228,
+    "per_class": {
+     "POSITIVE": {
+      "precision": 0.729,
+      "recall": 0.591,
+      "f1-score": 0.653,
+      "support": 132.0
+     },
+     "NEUTRAL": {
+      "precision": 0.815,
+      "recall": 0.288,
+      "f1-score": 0.426,
+      "support": 229.0
+     },
+     "NEGATIVE": {
+      "precision": 0.3,
+      "recall": 0.733,
+      "f1-score": 0.426,
+      "support": 45.0
+     },
+     "MIXED": {
+      "precision": 0.068,
+      "recall": 0.286,
+      "f1-score": 0.11,
+      "support": 14.0
+     },
+     "AMBIGUOUS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+     }
+    },
+    "confusion_matrix": {
+     "labels": [
+      "POSITIVE",
+      "NEUTRAL",
+      "NEGATIVE",
+      "MIXED",
+      "AMBIGUOUS"
+     ],
+     "matrix": [
+      [
+       78,
+       11,
+       10,
+       20,
+       13
+      ],
+      [
+       25,
+       66,
+       63,
+       31,
+       44
+      ],
+      [
+       0,
+       2,
+       33,
+       4,
+       6
+      ],
+      [
+       4,
+       2,
+       4,
+       4,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ]
+    }
+   },
+   "three_class": {
+    "n": 420,
+    "accuracy": 0.6143,
+    "macro_f1": 0.5792,
+    "per_class": {
+     "POSITIVE": {
+      "precision": 0.729,
+      "recall": 0.591,
+      "f1-score": 0.653,
+      "support": 132.0
+     },
+     "NEUTRAL": {
+      "precision": 0.724,
+      "recall": 0.605,
+      "f1-score": 0.659,
+      "support": 243.0
+     },
+     "NEGATIVE": {
+      "precision": 0.3,
+      "recall": 0.733,
+      "f1-score": 0.426,
+      "support": 45.0
+     }
+    },
+    "confusion_matrix": {
+     "labels": [
+      "POSITIVE",
+      "NEUTRAL",
+      "NEGATIVE"
+     ],
+     "matrix": [
+      [
+       78,
+       44,
+       10
+      ],
+      [
+       29,
+       147,
+       67
+      ],
+      [
+       0,
+       12,
+       33
+      ]
+     ]
+    }
+   },
+   "slices": {
+    "id_negation": {
+     "n": 45,
+     "acc5": 0.267,
+     "acc3": 0.333
+    },
+    "id_slang": {
+     "n": 30,
+     "acc5": 0.667,
+     "acc3": 0.733
+    },
+    "sarcasm_cue": {
+     "n": 22,
+     "acc5": 0.318,
+     "acc3": 0.636
+    },
+    "en_negation": {
+     "n": 101,
+     "acc5": 0.267,
+     "acc3": 0.663
+    },
+    "emoji_heavy": {
+     "n": 37,
+     "acc5": 0.676,
+     "acc3": 0.757
+    },
+    "technical_shorthand": {
+     "n": 86,
+     "acc5": 0.291,
+     "acc3": 0.558
+    },
+    "code_switch": {
+     "n": 21,
+     "acc5": 0.476,
+     "acc3": 0.524
+    },
+    "lang_en": {
+     "n": 242,
+     "macro_f1_5": 0.305,
+     "acc3": 0.624
+    },
+    "lang_id": {
+     "n": 173,
+     "macro_f1_5": 0.333,
+     "acc3": 0.59
+    }
+   }
+  }
+ },
+ "sentiment_production_model": "xlmr",
+ "intent": {
+  "n": 420,
+  "accuracy": 0.4357,
+  "macro_f1": 0.2628,
+  "per_class": {
+   "ABANDONMENT_FRUSTRATION": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1.0
+   },
+   "AWARENESS": {
+    "precision": 0.409,
+    "recall": 0.643,
+    "f1-score": 0.5,
+    "support": 42.0
+   },
+   "COMPARISON": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 7.0
+   },
+   "EXPLICIT_PURCHASE_INTENT": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2.0
+   },
+   "INFORMATION_SEEKING": {
+    "precision": 0.622,
+    "recall": 0.697,
+    "f1-score": 0.657,
+    "support": 99.0
+   },
+   "INSPIRATION": {
+    "precision": 0.58,
+    "recall": 0.468,
+    "f1-score": 0.518,
+    "support": 62.0
+   },
+   "POST_PURCHASE": {
+    "precision": 0.25,
+    "recall": 0.154,
+    "f1-score": 0.19,
+    "support": 13.0
+   },
+   "PROBLEM_SOLVING": {
+    "precision": 0.29,
+    "recall": 0.321,
+    "f1-score": 0.305,
+    "support": 28.0
+   },
+   "PURCHASE_EXPLORATION": {
+    "precision": 0.2,
+    "recall": 0.077,
+    "f1-score": 0.111,
+    "support": 13.0
+   },
+   "RECOMMENDATION": {
+    "precision": 0.441,
+    "recall": 0.188,
+    "f1-score": 0.263,
+    "support": 80.0
+   },
+   "UNKNOWN": {
+    "precision": 0.292,
+    "recall": 0.425,
+    "f1-score": 0.346,
+    "support": 73.0
+   }
+  },
+  "confusion_matrix": {
+   "labels": [
+    "ABANDONMENT_FRUSTRATION",
+    "AWARENESS",
+    "COMPARISON",
+    "EXPLICIT_PURCHASE_INTENT",
+    "INFORMATION_SEEKING",
+    "INSPIRATION",
+    "POST_PURCHASE",
+    "PROBLEM_SOLVING",
+    "PURCHASE_EXPLORATION",
+    "RECOMMENDATION",
+    "UNKNOWN"
+   ],
+   "matrix": [
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     27,
+     0,
+     0,
+     4,
+     2,
+     1,
+     2,
+     0,
+     1,
+     5
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     3,
+     0,
+     0,
+     1,
+     2,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     3,
+     0,
+     69,
+     4,
+     2,
+     6,
+     1,
+     9,
+     4
+    ],
+    [
+     0,
+     11,
+     0,
+     0,
+     4,
+     29,
+     0,
+     2,
+     0,
+     2,
+     14
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     1,
+     2,
+     2,
+     1,
+     0,
+     1,
+     5
+    ],
+    [
+     0,
+     2,
+     0,
+     0,
+     11,
+     0,
+     1,
+     9,
+     0,
+     1,
+     4
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     6,
+     0,
+     1,
+     0,
+     1,
+     0,
+     4
+    ],
+    [
+     0,
+     10,
+     3,
+     0,
+     4,
+     5,
+     0,
+     4,
+     1,
+     15,
+     38
+    ],
+    [
+     0,
+     14,
+     1,
+     0,
+     9,
+     8,
+     0,
+     6,
+     0,
+     4,
+     31
+    ]
+   ]
+  },
+  "purchase_intent_precision": 0.0
+ },
+ "pain_points": {
+  "micro_precision": 0.28,
+  "micro_recall": 0.333,
+  "per_code": {
+   "AI": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 1,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   "AUTOMATION": {
+    "tp": 0,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   "COST": {
+    "tp": 6,
+    "fp": 8,
+    "fn": 6,
+    "precision": 0.429,
+    "recall": 0.5
+   },
+   "EC_TDS": {
+    "tp": 2,
+    "fp": 2,
+    "fn": 2,
+    "precision": 0.5,
+    "recall": 0.5
+   },
+   "EQUIPMENT": {
+    "tp": 1,
+    "fp": 4,
+    "fn": 4,
+    "precision": 0.2,
+    "recall": 0.2
+   },
+   "KNOWLEDGE": {
+    "tp": 1,
+    "fp": 5,
+    "fn": 4,
+    "precision": 0.167,
+    "recall": 0.2
+   },
+   "LIGHT": {
+    "tp": 0,
+    "fp": 1,
+    "fn": 2,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   "MEDIA": {
+    "tp": 0,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   "NUTRIENTS": {
+    "tp": 0,
+    "fp": 10,
+    "fn": 6,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   "OXYGEN": {
+    "tp": 0,
+    "fp": 2,
+    "fn": 1,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   "PH": {
+    "tp": 0,
+    "fp": 3,
+    "fn": 3,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   "PLANT_HEALTH": {
+    "tp": 13,
+    "fp": 12,
+    "fn": 16,
+    "precision": 0.52,
+    "recall": 0.448
+   },
+   "SENSOR": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.667
+   },
+   "SETUP": {
+    "tp": 0,
+    "fp": 5,
+    "fn": 1,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   "SOFTWARE": {
+    "tp": 0,
+    "fp": 1,
+    "fn": 1,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   "SPACE": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 2,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   "SUPPORT": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "SUSTAINABILITY": {
+    "tp": 0,
+    "fp": 5,
+    "fn": 1,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   "TEMPERATURE": {
+    "tp": 2,
+    "fp": 2,
+    "fn": 2,
+    "precision": 0.5,
+    "recall": 0.5
+   },
+   "TIME": {
+    "tp": 0,
+    "fp": 1,
+    "fn": 3,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   "WATER": {
+    "tp": 0,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.0,
+    "recall": 0.0
+   }
+  }
+ },
+ "experience": {
+  "n": 420,
+  "accuracy": 0.8214,
+  "macro_f1": 0.2492,
+  "per_class": {
+   "BEGINNER": {
+    "precision": 0.227,
+    "recall": 0.455,
+    "f1-score": 0.303,
+    "support": 22.0
+   },
+   "EXPERIENCED": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 5.0
+   },
+   "INTERMEDIATE": {
+    "precision": 1.0,
+    "recall": 0.167,
+    "f1-score": 0.286,
+    "support": 6.0
+   },
+   "NEVER_TRIED": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 8.0
+   },
+   "PROFESSIONAL_COMMERCIAL": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 5.0
+   },
+   "UNKNOWN": {
+    "precision": 0.92,
+    "recall": 0.893,
+    "f1-score": 0.906,
+    "support": 374.0
+   }
+  },
+  "confusion_matrix": {
+   "labels": [
+    "BEGINNER",
+    "EXPERIENCED",
+    "INTERMEDIATE",
+    "NEVER_TRIED",
+    "PROFESSIONAL_COMMERCIAL",
+    "UNKNOWN"
+   ],
+   "matrix": [
+    [
+     10,
+     0,
+     0,
+     0,
+     0,
+     12
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0,
+     4
+    ],
+    [
+     1,
+     0,
+     1,
+     0,
+     0,
+     4
+    ],
+    [
+     4,
+     0,
+     0,
+     0,
+     0,
+     4
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     5
+    ],
+    [
+     28,
+     1,
+     0,
+     0,
+     11,
+     334
+    ]
+   ]
+  }
+ },
+ "relevance_precision_llm": 0.926
+}

@@ -1,0 +1,18 @@
+{
+ "scheme_A": {
+  "F": 1,
+  "S": 1,
+  "R": 1,
+  "B": 1,
+  "Rel": 1
+ },
+ "scheme_B": {
+  "F": 0.3,
+  "S": 0.25,
+  "R": 0.1,
+  "B": 0.15,
+  "Rel": 0.2
+ },
+ "scheme_C": "F*S*R*B (relevance removed)",
+ "normalisation": "min-max to [0.1,1]; F uses log1p(count); S = mean rule severity + 2*negative share"
+}

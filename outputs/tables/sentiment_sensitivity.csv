@@ -1,0 +1,9 @@
+,NEUTRAL,POSITIVE,AMBIGUOUS,NEGATIVE,MIXED,n
+customer_voice_core,35.4,25.4,17.34,15.97,5.89,91068.0
+high_confidence_only(>=0.7),36.11,43.38,,20.12,0.39,36923.0
+include_cannabis_context,35.23,25.19,17.57,16.03,5.99,92455.0
+include_news_promo,35.54,25.3,17.32,15.95,5.88,91723.0
+exclude_dominant_platform,31.41,14.68,24.51,21.37,8.03,36446.0
+comments_only,34.94,28.98,16.13,14.52,5.43,69122.0
+posts_only,36.87,14.1,21.16,20.51,7.35,21946.0
+thread_normalised(weighted),35.55,15.24,21.16,20.85,7.19,91068.0

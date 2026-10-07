@@ -1,0 +1,10 @@
+{
+ "dominant_platform": "youtube",
+ "ari_platform_balanced": 0.135,
+ "ari_without_dominant": 0.46,
+ "n_balanced": 4660,
+ "n_without_dominant": 17216,
+ "k": 4,
+ "n": 31114,
+ "n_features": 46
+}

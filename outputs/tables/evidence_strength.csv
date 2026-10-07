@@ -1,0 +1,47 @@
+finding,finding_type,n,platforms_with_3plus,evidence_level,insight_level
+Pain point PLANT_HEALTH,pain_point,4754,8,E3,4.0
+Pain point NUTRIENTS,pain_point,1393,8,E3,4.0
+Pain point PH,pain_point,687,8,E3,4.0
+Pain point EQUIPMENT,pain_point,977,8,E3,4.0
+Pain point KNOWLEDGE,pain_point,1688,8,E3,4.0
+Pain point TEMPERATURE,pain_point,459,8,E3,4.0
+Pain point EC_TDS,pain_point,439,7,E3,4.0
+Pain point COST,pain_point,1925,8,E3,4.0
+Pain point MEDIA,pain_point,340,8,E3,4.0
+Pain point WATER,pain_point,355,7,E3,4.0
+Pain point SETUP,pain_point,313,8,E3,3.0
+Pain point AUTOMATION,pain_point,511,8,E3,4.0
+Pain point OXYGEN,pain_point,242,5,E3,4.0
+Pain point SENSOR,pain_point,113,5,E3,4.0
+Pain point SOFTWARE,pain_point,92,6,E3,4.0
+Pain point SUSTAINABILITY,pain_point,220,7,E3,4.0
+Pain point TIME,pain_point,95,4,E3,4.0
+Pain point LIGHT,pain_point,84,6,E3,4.0
+Pain point SUPPORT,pain_point,31,3,E3,4.0
+Pain point AI,pain_point,22,4,E3,3.0
+Pain point SPACE,pain_point,9,2,E3,4.0
+Explicit request: education,feature_explicit,228,8,E3,
+Explicit request: community,feature_explicit,62,7,E3,
+Explicit request: tds_ec_monitoring,feature_explicit,46,6,E3,
+Explicit request: ph_monitoring,feature_explicit,31,6,E3,
+Explicit request: trend_history,feature_explicit,30,5,E3,
+Explicit request: diagnostics,feature_explicit,18,5,E3,
+Explicit request: dashboard,feature_explicit,18,5,E3,
+Explicit request: beginner_mode,feature_explicit,8,2,E3,
+Explicit request: biodegradable_media,feature_explicit,8,4,E3,
+Explicit request: water_level_monitoring,feature_explicit,6,3,E3,
+Explicit request: remote_app_control,feature_explicit,6,3,E3,
+Explicit request: recommendations,feature_explicit,5,2,E3,
+Explicit request: temperature_monitoring,feature_explicit,5,4,E3,
+Explicit request: reminders,feature_explicit,5,4,E3,
+Explicit request: alerts,feature_explicit,3,2,E3,
+Explicit request: automation_dosing,feature_explicit,1,1,E1,
+Explicit request: ai_anomaly_detection,feature_explicit,0,0,E0,
+Contradiction: ANTI_AUTOMATION,contradiction,189,7,E3,
+Contradiction: PRICE_OVER_FEATURES,contradiction,42,4,E3,
+Contradiction: SOIL_PREFERENCE,contradiction,33,3,E3,
+Contradiction: SUSTAINABILITY_SKEPTIC,contradiction,30,3,E3,
+Contradiction: SUBSCRIPTION_DISLIKE,contradiction,21,3,E3,
+Contradiction: APP_DISLIKE,contradiction,8,1,E2,
+Contradiction: SENSOR_DISTRUST,contradiction,8,2,E3,
+Contradiction: AI_SKEPTICISM,contradiction,3,0,E2,

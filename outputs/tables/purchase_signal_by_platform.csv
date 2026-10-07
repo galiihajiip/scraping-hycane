@@ -1,0 +1,6 @@
+purchase_signal,bluesky,gardenweb,hackernews,lemmy,mastodon,reddit,stackexchange,youtube,All
+HIGH,5,38,4,2,5,119,1,156,330
+LOW,190,1877,290,185,184,2445,67,2686,7924
+MEDIUM,5,48,7,2,3,153,2,263,483
+NONE,1408,8585,1377,886,2020,16214,324,51517,82331
+All,1608,10548,1678,1075,2212,18931,394,54622,91068

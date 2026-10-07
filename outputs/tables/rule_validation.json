@@ -1,0 +1,30 @@
+{
+ "reference": "LLM reference labels (Claude, in-session) \u2014 NOT human-verified; n=420",
+ "protocol": "Rules revised once after inspecting errors on the dev half (idx<210); test half (idx>=210) never inspected.",
+ "v1_original_rules_full_set": {
+  "pain_micro_precision": 0.156,
+  "pain_micro_recall": 0.25,
+  "intent_accuracy": 0.3714,
+  "intent_macro_f1": 0.2068
+ },
+ "v3_revised_rules": {
+  "dev": {
+   "n": 210,
+   "pain_micro_precision": 0.288,
+   "pain_micro_recall": 0.357,
+   "pain_any_precision": 0.568,
+   "pain_any_recall": 0.5,
+   "intent_acc": 0.429,
+   "intent_macro_f1": 0.273
+  },
+  "test": {
+   "n": 210,
+   "pain_micro_precision": 0.271,
+   "pain_micro_recall": 0.31,
+   "pain_any_precision": 0.484,
+   "pain_any_recall": 0.357,
+   "intent_acc": 0.448,
+   "intent_macro_f1": 0.285
+  }
+ }
+}

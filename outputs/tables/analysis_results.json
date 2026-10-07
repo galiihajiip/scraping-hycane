@@ -1,0 +1,174 @@
+{
+ "timeframe_customer_voice": "2002-01-28 to 2026-10-07",
+ "data_quality": {
+  "bronze_rows": 150708,
+  "unique_source_objects": 136019,
+  "source_id_duplicate_rate": 0.0975,
+  "irrelevant_rate": 0.229,
+  "unrelated_meaning_excluded": 443,
+  "spam_rate_among_relevant": 0.0031,
+  "text_duplicate_rate_among_relevant": 0.0288,
+  "semantic_duplicates": 348,
+  "cannabis_context_share_of_gold": 0.0151,
+  "news_or_promo_share_of_core": 0.0071,
+  "missing_timestamp_rate_gold": 0.0,
+  "mean_language_confidence_gold": 0.757,
+  "low_language_confidence_share": 0.1774,
+  "geo_known_rate_gold": 0.0124,
+  "gold_records": 93125,
+  "gold_core_scope": 91723,
+  "customer_voice_core": 91068,
+  "requests_logged": 5142,
+  "request_error_rate": 0.0134,
+  "requests_with_retries_share": 0.0325
+ },
+ "max_thread_share": 0.0058,
+ "sentiment_platform_test": {
+  "chi2": 8577.24,
+  "p_value": 0.0,
+  "dof": 28,
+  "cramers_v": 0.153,
+  "n": 91068
+ },
+ "sentiment_model_agreement": {
+  "xlmr_vs_xlmr_id": 0.841,
+  "xlmr_vs_lexicon": 0.4879,
+  "xlmr_id_vs_lexicon": 0.4509
+ },
+ "pain_rank_spearman_A_vs_B": 0.99,
+ "pain_rank_spearman_A_vs_C": 0.987,
+ "pain_top5_by_subset": {
+  "customer_voice_core": [
+   "PLANT_HEALTH",
+   "COST",
+   "KNOWLEDGE",
+   "NUTRIENTS",
+   "EQUIPMENT"
+  ],
+  "high_confidence_only(>=0.7)": [
+   "PLANT_HEALTH",
+   "COST",
+   "KNOWLEDGE",
+   "EQUIPMENT",
+   "NUTRIENTS"
+  ],
+  "include_cannabis_context": [
+   "PLANT_HEALTH",
+   "COST",
+   "KNOWLEDGE",
+   "NUTRIENTS",
+   "EQUIPMENT"
+  ],
+  "include_news_promo": [
+   "PLANT_HEALTH",
+   "COST",
+   "KNOWLEDGE",
+   "NUTRIENTS",
+   "EQUIPMENT"
+  ],
+  "exclude_dominant_platform": [
+   "PLANT_HEALTH",
+   "KNOWLEDGE",
+   "COST",
+   "NUTRIENTS",
+   "EQUIPMENT"
+  ],
+  "comments_only": [
+   "PLANT_HEALTH",
+   "COST",
+   "NUTRIENTS",
+   "KNOWLEDGE",
+   "EQUIPMENT"
+  ],
+  "posts_only": [
+   "PLANT_HEALTH",
+   "KNOWLEDGE",
+   "NUTRIENTS",
+   "COST",
+   "EQUIPMENT"
+  ],
+  "thread_normalised(weighted)": [
+   "PLANT_HEALTH",
+   "KNOWLEDGE",
+   "COST",
+   "NUTRIENTS",
+   "EQUIPMENT"
+  ]
+ },
+ "pain_rank_min_spearman_vs_core": 0.959,
+ "n_beginner_or_never": 11135,
+ "n_experienced": 2100,
+ "n_indonesian_voice": 30703,
+ "n_non_indonesian_voice": 60365,
+ "intent_platform_test": {
+  "chi2": 31158.51,
+  "p_value": 0.0,
+  "dof": 70,
+  "cramers_v": 0.221,
+  "n": 91068
+ },
+ "bagasse_discourse": {
+  "n_all_mentions": 152,
+  "n_growing_media_context": 19,
+  "contexts": {
+   "tableware_packaging": 18,
+   "energy_fuel": 17,
+   "paper_board": 17,
+   "growing_media_or_compost": 19,
+   "animal_feed_mushroom": 11
+  }
+ },
+ "bagasse_mentions_gold": 18,
+ "bagasse_mentions_customer_voice": 18,
+ "growing_media_terms": {
+  "rockwool": 1044,
+  "coco": 1049,
+  "perlite": 572,
+  "clay_pebbles": 715,
+  "sponge": 687,
+  "peat": 295,
+  "rapid_rooter": 66,
+  "biodegradable": 9,
+  "bagasse": 18
+ },
+ "rockwool_negative_or_env_concern": 159,
+ "saturation_last_10_blocks_mean_new_per_100": 0.0,
+ "saturation_first_10_blocks_mean_new_per_100": 16.8,
+ "counts": {
+  "gold": 93125,
+  "core": 91723,
+  "customer_voice": 91068,
+  "platforms": [
+   "bluesky",
+   "gardenweb",
+   "hackernews",
+   "lemmy",
+   "mastodon",
+   "reddit",
+   "stackexchange",
+   "youtube"
+  ],
+  "source_families": [
+   "bluesky",
+   "forums",
+   "hackernews",
+   "lemmy",
+   "mastodon",
+   "reddit",
+   "stackexchange",
+   "youtube"
+  ],
+  "languages_top": {
+   "en": 57801,
+   "id": 31139,
+   "tl": 1733,
+   "de": 313,
+   "pt": 258,
+   "es": 256,
+   "ms": 213,
+   "fi": 195
+  },
+  "date_min": "2002-01-28",
+  "date_max": "2026-10-07"
+ }
+}

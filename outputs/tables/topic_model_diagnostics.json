@@ -1,0 +1,15 @@
+{
+ "k_selected": 35,
+ "silhouette_sweep": {
+  "20": 0.3335,
+  "25": 0.3337,
+  "30": 0.3562,
+  "35": 0.3634,
+  "40": 0.3579
+ },
+ "nmi_vs_nmf": 0.182,
+ "ari_vs_nmf": 0.049,
+ "hdbscan_leaf_clusters": 53,
+ "hdbscan_leaf_outlier_share": 0.535,
+ "nmi_vs_hdbscan_leaf_nonoutliers": 0.875
+}
