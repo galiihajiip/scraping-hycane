@@ -1,0 +1,163 @@
+problem_cue: (problem|issue|trouble|not working|stopped working|quit working|broke|broken|leak|fail|died|dead|dying|wrong|can'?t figure|confus|overwhelm|frustrat|struggl|too (high|low|hot|warm|cold|much|expensive)|keeps? (dropping|rising|going|dying|clogging|breaking|failing|drifting)|drift|inaccurate|unreliable|won'?t (grow|germinate|sprout|work|go)|not (growing|germinating|sprouting|sure (if|why|what))|why (is|are|do|does|did|won'?t)|what('?s| is) (wrong|happening)|gagal|mati|rusak|bocor|masalah|kenapa|kok\b|mentok|susah|sulit|ribet|bingung|kemahalan|tidak (bisa|tumbuh|stabil|akurat|naik|turun|ketemu|berhasil)|gak (bisa|tumbuh|ketemu|naik|turun|berhasil|jadi)|ga (bisa|tumbuh|ketemu|naik|turun|jadi)|nggak (bisa|tumbuh)|ngga (bisa|tumbuh)|kepanasan|layu)
+pain_points:
+  SETUP:
+    rx: (set ?up|setting up|assembl|install|instructions|rakit|merakit|instalasi)
+    severity: 2
+  KNOWLEDGE:
+    rx: (don'?t know|no idea|not sure|confus|overwhelm|beginner|newbie|noob|first time|learning curve|too much info|conflicting (info|advice)|where (do|to) (i )?start|tidak tahu|nggak tahu|gak tahu|ga tau|bingung|pemula|baru (mulai|belajar)|belum paham)
+    severity: 2
+  NUTRIENTS:
+    rx: (nutrient|nutrisi|fertili[sz]er|pupuk|ab ?mix|deficien|toxicit|lockout|nute|calmag|cal-mag|masterblend|general hydroponics|flora ?series|nitrogen|potassium|calcium|magnesium|iron deficien|tip ?burn)
+    severity: 3
+  PH:
+    rx: (\bph\b|ph (up|down|drift|swing|meter|pen|level)|acidity|alkalin|keasaman)
+    severity: 3
+  EC_TDS:
+    rx: (\bec\b|\btds\b|\bppm\b|electrical conductivity|conductivity|ec meter|tds meter|kepekatan)
+    severity: 3
+  WATER:
+    rx: (water (change|level|quality|top|evaporat|loss)|reservoir|tap water|chlorin|chloramine|ro water|reverse osmosis|hard water|top ?off|top ?up|evaporat|ganti air|air (berkurang|habis|keruh)|tandon|bak air|kualitas air)
+    severity: 2
+  TEMPERATURE:
+    rx: (water temp|reservoir temp|too (hot|warm|cold)|heat ?wave|chiller|overheat|temperature|suhu|panas|kepanasan)
+    severity: 3
+  OXYGEN:
+    rx: (oxygen|dissolved oxygen|air ?pump|air ?stone|airstone|aerat|bubbler|oksigen|aerator|gelembung)
+    severity: 2
+  PLANT_HEALTH:
+    rx: (root rot|pythium|slime|brown roots|yellow(ing)? leaves|wilt|droop|stunt|leggy|bolt|tip ?burn|pest|aphid|thrip|gnat|spider mite|mold|mould|mildew|algae|damping off|dying|died|akar busuk|daun kuning|layu|kerdil|hama|kutu|jamur|lumut|tanaman mati|busuk)
+    severity: 3
+  LIGHT:
+    rx: (grow ?lights?|light (burn|schedule|intensity|level)|not enough light|leggy|stretch(ing|y)|kurang (cahaya|sinar|matahari)|lampu grow)
+    severity: 2
+  TIME:
+    rx: (time[- ]consuming|no time|too much time|takes (so much|a lot of) time|vacation|away for|daily (check|maintenance)|maintenance|tedious|babysit|forget to|forgot to|kerja|sibuk|tidak sempat|gak sempat|perawatan|rutin)
+    severity: 2
+  COST:
+    rx: (expensive|cost|price|pricey|overpriced|cheap|afford|budget|\$\s?\d|\d+\s?(usd|dollars|bucks)|rp\.?\s?\d|rupiah|ribu|juta|mahal|murah|harga|biaya|modal|worth (it|the money)|not worth|subscription|langganan|refill|pods? (are|cost))
+    severity: 2
+  SPACE:
+    rx: (small space|tiny (apartment|space)|limited space|no (yard|garden|space|balcony|room)|not enough (space|room)|lahan sempit|lahan terbatas|tidak ada lahan|gak ada lahan)
+    severity: 1
+  EQUIPMENT:
+    rx: (pump (died|failed|broke|stopped|noise)|leak|clog|broke|broken|defect|malfunction|stopped working|quit working|warranty|cracked|noisy|noise|motor|timer (failed|broke)|bocor|rusak|mampet|macet|pompa)
+    severity: 3
+  SENSOR:
+    rx: (sensor|probe|meter (is|was)? ?(off|wrong|inaccurate|drift)|calibrat|ph pen|tds pen|ec pen|reading(s)? (are|is|were)? ?(off|wrong|jump|inconsistent)|kalibrasi)
+    severity: 2
+  AUTOMATION:
+    rx: (automat|auto[- ]?dos|doser|dosing|controller|timer|otomatis)
+    severity: 1
+  SOFTWARE:
+    rx: (\bapp\b|application|software|firmware|wifi|wi-fi|bluetooth|cloud|account|login|aplikasi|notification|notif|connectivity|disconnect)
+    severity: 2
+  AI:
+    rx: (\bai\b|artificial intelligence|machine learning|chatgpt|gpt|computer vision|kecerdasan buatan)
+    severity: 1
+  MEDIA:
+    rx: (rockwool|rock wool|coco ?(coir|peat)|cocopeat|perlite|vermiculite|clay pebble|hydroton|leca|grow (plug|sponge)|sponge|rapid rooter|peat|growing medi|substrate|media tanam|spons|sekam|arang sekam|bagasse|ampas tebu|oasis cube)
+    severity: 2
+  SUSTAINABILITY:
+    rx: (sustainab|environment|eco[- ]?friendly|plastic waste|waste|biodegrad|compost|carbon|energy (use|consumption|bill)|electricity (bill|cost|use)|ramah lingkungan|berkelanjutan|limbah|sampah|daur ulang|listrik)
+    severity: 1
+  SUPPORT:
+    rx: (customer (service|support)|support (team|ticket)|no response|never (replied|responded)|refund|return(ed)? (it|policy)|warranty claim|seller|penjual|komplain|garansi|cs (nya|tidak))
+    severity: 2
+aspects:
+  ease_of_use: (easy|simple|straightforward|user[- ]friendly|hard|difficult|complicated|complex|mudah|gampang|praktis|simpel|susah|sulit|ribet)
+  price: (price|cost|expensive|cheap|afford|pricey|overpriced|worth|\$\s?\d|harga|mahal|murah|biaya|rp\.?\s?\d)
+  maintenance: (maintenance|maintain|clean(ing)?|upkeep|water change|top ?off|perawatan|bersih|ganti air)
+  nutrients: (nutrient|nutrisi|fertili[sz]er|ab ?mix|pupuk|nute)
+  pH: (\bph\b)
+  EC_TDS: (\bec\b|\btds\b|\bppm\b|conductivity)
+  water: (water|reservoir|\bair\b(?! ?pump)|tandon)
+  temperature: (temperature|temp\b|heat|hot|cold|suhu|panas)
+  oxygen: (oxygen|air ?pump|air ?stone|airstone|aerat|bubbler|oksigen|aerator)
+  plant_health: (root rot|yellow|wilt|healthy|thriv|pest|mold|algae|dying|kuning|layu|sehat|subur|busuk|hama)
+  light: (grow ?light|\bled\b|lighting|lampu|cahaya)
+  equipment: (pump|pompa|tank|bucket|tote|pipe|pipa|net ?pot|tower|channel|equipment|hardware|alat)
+  sensors: (sensor|probe|meter|calibrat|kalibrasi)
+  automation: (automat|auto[- ]?dos|doser|controller|timer|arduino|esp32|raspberry|otomatis)
+  software_app: (\bapp\b|software|firmware|wifi|wi-fi|bluetooth|aplikasi|notification)
+  AI: (\bai\b|artificial intelligence|machine learning|chatgpt)
+  growing_media: (rockwool|coco|cocopeat|perlite|clay pebble|hydroton|leca|sponge|spons|substrate|media tanam|rapid rooter|bagasse|ampas tebu|growing medi)
+  sustainability: (sustainab|eco[- ]?friendly|environment|biodegrad|plastic|waste|ramah lingkungan|limbah|berkelanjutan|compost)
+  support: (customer (service|support)|support|warranty|refund|garansi|seller|penjual)
+  hydroponic_kit: (kit\b|aerogarden|click ?(and|&) ?grow|lettuce ?grow|gardyn|rise gardens?|tower garden|smart garden|starter kit|paket hidroponik|kit hidroponik)
+intent:
+  EXPLICIT_PURCHASE_INTENT: (\bi('?m| am) (going to|gonna|about to) (buy|order|get)|(just|finally) (ordered|bought|purchased|picked up)|i('?ll| will) (buy|order|get one)|planning (to|on) (buy|purchas|getting)|ready to (buy|order|pull the trigger)|pull(ed)? the trigger|added to (my )?cart|mau beli|pengen beli|ingin beli|akan beli|sudah (beli|order|pesan)|baru (beli|order)|udah (beli|order|checkout)|checkout|pesan sekarang)
+  PURCHASE_EXPLORATION: (should i (buy|get)|worth (it|buying|the money)|which (one|kit|system|brand|model) should|recommend(ation)?s? (for|on) (a|an|the)? ?(kit|system|brand|setup|light|meter|pump)|looking (to buy|for a (kit|system))|thinking (of|about) (buying|getting)|budget (for|of|is)|how much (does|is|did|would)|price (of|for)|harga(nya)? berapa|berapa harga|rekomendasi (kit|alat|merk|paket)|bagus (yang|mana)|beli (yang|mana)|layak (dibeli|beli)|where (can|do|should) i buy|di ?mana (belinya|beli)|beli (di ?mana|dimana)|link (pembelian|beli))
+  COMPARISON: (\bvs\.?\b|versus|compared (to|with)|comparison|better than|worse than|difference between|or (should i|is it better)|lebih bagus|lebih baik|dibanding|bandingkan|perbedaan)
+  PROBLEM_SOLVING: (what('?s| is) wrong|why (is|are|do|does) my|help( me)?[!?. ]|any (idea|advice|suggestion|tips)s?|how (do|can) i (fix|stop|prevent|get rid)|is this (normal|root rot|a deficiency)|what (should|can) i do|troubleshoot|diagnos|kenapa|tolong|mohon (bantuan|saran|pencerahan)|solusinya|gimana (cara )?(atasi|mengatasi)|bagaimana mengatasi|minta saran)
+  INFORMATION_SEEKING: (\?|how (do|does|to|much|often|long)|what (is|are|kind|type)|anyone (know|tried|have|use)|can (i|you)|is it (possible|ok|safe)|where (do|can|to)|bagaimana|gimana|apa (itu|saja)|berapa|bisa (gak|nggak|ga|tidak)|cara\b)
+  POST_PURCHASE: (i (bought|got|purchased|ordered) (a|an|the|my|this|one)|my (aerogarden|click ?(and|&) ?grow|lettuce ?grow|gardyn|kit|tower garden|system) (is|has|was|keeps|stopped|arrived)|after (a|two|three|\d+) (week|month|year)s? (of|with) (use|using|my)|been using (it|my|mine|this)|owned (it|mine) for|sudah (pakai|pake)|udah (pakai|pake)|setelah (pakai|pake)|kit (saya|ku))
+  RECOMMENDATION: (i (highly |strongly )?recommend|i'?d recommend|you should (get|try|buy|use)|go with|check out|best (kit|system|purchase|investment)|can'?t recommend|would not recommend|wouldn'?t recommend|avoid (it|this|the)|saya sarankan|rekomendasi saya|cobain|recomended|recommended (for|to)|worth every penny|you (should|need to|could|might want)|i would|i'?d (suggest|use|go)|if it were me|make sure|try (using|adding|to)|keep (it|the) |don'?t (use|worry|need)|sebaiknya|disarankan|coba (pakai|pake|gunakan)|bisa (pakai|pake|diganti)|harus(nya)? (pakai|pake|di)|cukup (pakai|pake)|kalau saya)
+  ABANDONMENT_FRUSTRATION: (gave up|giving up|give up|quit (hydro|growing)|stopped (using|growing)|threw (it|them) (away|out)|never again|waste of (money|time)|regret|hate (this|it|my)|so frustrat|fed up|done with (hydro|it)|back to soil|switch(ed|ing)? (back )?to soil|collecting dust|in the closet|sold (it|mine)|nyerah|menyerah|kapok|berhenti (hidroponik|nanam)|gagal terus|nyesel|menyesal|buang duit)
+  INSPIRATION: (beautiful|gorgeous|amazing|awesome|love (this|it|my|how)|so (cool|pretty|happy|proud)|look(s|ing)? (great|amazing|healthy|good)|harvest(ed)?|first harvest|proud|inspir|goals|mantap|keren|bagus banget|subur|panen|cantik|seneng|senang|thank|thanks|terima ?kasih|makasih|trimakasih|terimakasih|bermanfaat|ilmunya|masya ?allah|barakallah|tabarakallah|luar biasa|inspiratif|menginspirasi|great (video|job|idea|info|work)|nice|wow|keren|mantap|mantab|semangat|sukses selalu)
+  AWARENESS: (hydroponic|hidroponik|vertical farm|urban farm|indoor farm|news|article|study|research|report|according to|berita|artikel)
+experience:
+  NEVER_TRIED: (never (tried|grown|done) (hydro|it|this)|thinking (of|about) (starting|getting into|trying)|want to (start|try|get into)|haven'?t (started|tried)|considering (starting|hydro)|belum pernah|pengen coba|mau coba|ingin mencoba|ingin memulai)
+  BEGINNER: (beginner|newbie|noob|new to (hydro|this|growing)|first (time|grow|attempt|harvest|setup|system|kit)|just (started|getting started|set up|bought my first)|my first|learning|pemula|baru (mulai|belajar|coba)|pertama kali|newb)
+  INTERMEDIATE: (second (grow|year|season|attempt)|(a|one|1|two|2|couple|few) (year|years|seasons?) (in|of|now)|been (doing|growing) (this|hydro|it) for (a|one|two|\d+) (month|year)|after a few (grows|runs)|sudah (setahun|beberapa bulan))
+  EXPERIENCED: (years of experience|been growing (hydro(ponically)?|for) (\d{1,2}|many|several|over|ten|five) years|(\d{1,2}|many|several|ten|five)\+? years (of|in|growing|doing)|veteran|i'?ve (been doing|grown) (this|hydro) (for )?(\d|many|several|years)|sudah (\d+|bertahun-tahun) tahun)
+  PROFESSIONAL_COMMERCIAL: (commercial|my (farm|business|greenhouse|customers)|we (sell|supply)|restaurant|wholesale|agronomist|sell (to|at) (the )?(market|restaurants|farmers)|bisnis|usaha hidroponik|jualan|omzet|petani hidroponik|greenhouse (operation|business)|farm(ing)? business|production (scale|facility))
+features:
+  explicit_cue: (i wish|wish (it|there was|they)|would (love|like|pay|be nice|be great|be cool)|if only|need(s|ed)? (a|an|to have)|should (have|include|add)|looking for (a|an|something)|is there (a|an|any)|does anyone (make|know of|sell)|want(ed)? (a|an|something)|feature request|missing feature|lacks?|doesn'?t have|kalau ada|semoga ada|butuh|perlu (ada)?|pengen ada|ingin ada|harusnya ada|seandainya)
+  catalog:
+    ph_monitoring: (\bph\b.{0,25}(monitor|sensor|probe|meter|pen|track|reading|log)|(monitor|sensor|probe|meter|pen|track|reading|log).{0,25}\bph\b)
+    tds_ec_monitoring: ((\bec\b|\btds\b|\bppm\b).{0,25}(monitor|sensor|probe|meter|pen|track|reading|log)|(monitor|sensor|probe|meter|pen|track|reading|log).{0,25}(\bec\b|\btds\b|\bppm\b))
+    temperature_monitoring: ((water|reservoir|nutrient) ?temp.{0,25}(monitor|sensor|probe|thermometer|track|log)|(thermometer|temp(erature)? (sensor|probe|monitor))|sensor suhu)
+    water_level_monitoring: (water level (sensor|monitor|indicator|alarm|alert|float)|float (switch|sensor|valve)|low water (alarm|alert|warning|light|indicator)|sensor (ketinggian|level) air)
+    alerts: (alert|alarm|notif|notification|warn(s|ing)? (me|you)|text (me|you)|push notification|reminder light|peringatan)
+    dashboard: (dashboard|graph(s|ing)?|chart|visuali[sz]|grafana|home ?assistant|real[- ]?time (data|monitor)|pantau)
+    trend_history: (log(ging|ged)?\b|history|track(ing)? (over time|trends?|readings)|data (log|over time)|record (my|the) (readings|data)|spreadsheet|journal|catatan)
+    ai_anomaly_detection: (\bai\b.{0,40}(detect|anomal|diagnos|predict|identify|warn)|anomal(y|ies) detection|predict(ive)? (maintenance|alert)|machine learning.{0,40}(detect|predict))
+    recommendations: (\bai\b.{0,40}(recommend|advice|suggest|tell (me|you) what)|tell(s)? (me|you) (what|how much|when) to (add|do|change)|auto(matic)?(ally)? (recommend|suggest|calculate)|nutrient calculator|dosing calculator|calculator|kalkulator)
+    beginner_mode: (beginner[- ]friendly|for beginners|plug and play|plug-and-play|set (it )?and forget|idiot[- ]proof|foolproof|fool-proof|no experience needed|easy (mode|setup|to use)|cocok untuk pemula|mudah untuk pemula)
+    reminders: (remind(er|s)?|schedule (water|nutrient|feeding)|calendar|when to (change|add|feed)|pengingat|jadwal)
+    diagnostics: (diagnos|identify (the )?(problem|deficiency|disease|issue)|what('?s| is) wrong with|plant doctor|deficiency chart|id (this|my)|identifikasi)
+    education: (guide|tutorial|course|video|youtube|book|class|workshop|learn(ing)? (resource|material)|step[- ]by[- ]step|panduan|tutorial|pelatihan|belajar|kursus|edukasi)
+    community: (community|forum|subreddit|group|discord|facebook group|club|komunitas|grup)
+    biodegradable_media: (biodegrad|compostable|eco(-| )?friendly (media|medium|plug|substrate)|rockwool alternative|replace rockwool|alternative to rockwool|plastic[- ]free|bagasse|ampas tebu|coco coir (instead|alternative)|media (organik|ramah lingkungan))
+    automation_dosing: (auto[- ]?dos|doser|dosing (pump|system)|automat(ic|ed|ion) (ph|nutrient|dosing|top ?off|refill)|peristaltic)
+    remote_app_control: (\bapp\b.{0,30}(control|monitor|remote|phone)|control (it|everything) from (my|your) phone|remote(ly)? (monitor|control)|wifi[- ](enabled|connected|controller)|smart ?phone)
+purchase_signal:
+  HIGH: (\bi('?m| am) (going to|gonna|about to) (buy|order)|(just|finally) (ordered|bought|purchased)|i('?ll| will) (buy|order)|ready to (buy|order)|pull(ed)? the trigger|added to (my )?cart|mau beli|pengen beli|akan beli|sudah (beli|order|pesan)|baru (beli|order)|udah (beli|order|checkout))
+  MEDIUM: (should i (buy|get)|worth (buying|the money|it\?)|which (one|kit|system|brand) should i|thinking (of|about) (buying|getting)|how much (does|is|did) (it|this|a|the) cost|where (can|do|should) i buy|price (of|for) (a|an|the|this)|harga(nya)? berapa|berapa harga|beli (dimana|di mana)|rekomendasi (kit|merk|alat))
+  LOW: (\bbuy|\bbought|purchase|order|\bkit\b|brand|store|shop|amazon|ikea|beli|toko|shopee|tokopedia)
+price_signal:
+  QUESTION: (how much|price\?|cost\?|berapa (harga|biaya)|harga(nya)? berapa|is it expensive|mahal (gak|nggak|ga|tidak)\?)
+  OBJECTION: (too expensive|overpriced|not worth (it|the money|the price)|rip ?off|can'?t afford|price(y| is too)|cost(s)? too much|way too much|terlalu mahal|kemahalan|mahal banget|gak worth|ga worth|nggak worth|tidak sepadan)
+  CHEAP_LANGUAGE: (cheap(er|est|ly)?|budget|low[- ]cost|inexpensive|affordable|diy for (less|cheap)|dollar store|for (under|less than) \$?\d|murah|hemat|terjangkau|ekonomis|modal kecil)
+  PREMIUM_LANGUAGE: (premium|high[- ]end|worth every penny|worth the (money|price|investment)|quality (is|was) (great|excellent)|you get what you pay for|investment|berkualitas|kualitas bagus|worth it)
+  SUBSCRIPTION: (subscription|subscribe|monthly fee|recurring (cost|fee)|pods? (are|cost|subscription)|seed pods|refill|langganan|berlangganan)
+  NUMERIC_PRICE: (\$\s?\d[\d,.]*|\d+\s?(usd|dollars|bucks)|rp\.?\s?\d[\d.,]*|\d+\s?(ribu|rb|juta|jt|k)\b)
+sustainability_signal:
+  POSITIVE: ((love|like|great|good|better) (for|about) (the )?(environment|planet)|eco[- ]?friendly|sustainab\w+ (is|was)? ?(great|important|matters)|less (water|waste|plastic)|saves? water|zero waste|reduce (waste|plastic)|compost(able)?|biodegradable|ramah lingkungan|hemat air|mengurangi (limbah|sampah))
+  SKEPTICAL: (greenwash|not (actually|really) (sustainable|green|eco)|energy (hog|intensive|cost)|electricity (bill|cost|use)|carbon footprint of|uses? (a lot of|so much) (electricity|energy|power)|rockwool (is|isn'?t) (bad|terrible|not)|not (that )?sustainable|tidak ramah lingkungan|boros listrik)
+  NEGATIVE: (don'?t care about (the )?(environment|sustainab)|sustainab\w+ (is|are) (overrated|hype|marketing)|who cares)
+  NEUTRAL: (sustainab|environment|eco|biodegrad|waste|plastic|carbon|limbah|lingkungan|berkelanjutan)
+voice_type:
+  NEWS_OR_PROMO: (press release|according to (a|the) (study|report)|announc(es|ed)|startup (raises|raised)|\bfunding\b|series [abc]\b|market (size|report|to reach|growth|is expected)|cagr|news|via rss|rss feed|launches|unveil|webinar|giveaway|shop now|buy now|order now|use code|discount|promo|diskon|jual\b|dijual|ready stock|hubungi|wa\.me|whatsapp|berita|pelatihan.{0,40}(gratis|dinas|pemkot|pemda)|lapas|kelurahan|dinas pertanian)
+  QUESTION: (\?|\b(how|what|why|which|where|when|anyone|does|is it|can i|should i)\b.{0,80}$|kenapa|bagaimana|gimana|apakah|berapa|mohon|tolong)
+  PERSONAL_EXPERIENCE: (\b(i|i'?m|i'?ve|my|mine|we|our)\b|\b(saya|aku|gue|gw|ku|kami|punyaku)\b)
+contradiction_probes:
+  ANTI_AUTOMATION: ((don'?t|do not|doesn'?t|no) need (sensors?|automation|a controller|an app|fancy|all that|expensive)|keep it simple|kiss principle|kratky (is|was) (so )?(easy|simple|great|fine)|no (pumps?|electricity|electronics) (needed|required)|passive (hydro|system)|set it and forget it with kratky|overkill|overengineer|over-engineer|unnecessary (tech|gadget)|tidak perlu (sensor|alat|otomatis)|gak perlu (sensor|alat))
+  SENSOR_DISTRUST: ((ph|ec|tds) (pen|probe|meter|sensor)s? (is|are|was|were)? ?(junk|garbage|useless|inaccurate|unreliable|drift|wrong|off|crap|cheap)|calibrat\w+ (constantly|every|all the time)|probes? (die|died|fail|drift|need replacing)|(cheap|amazon) (ph|ec|tds) (pen|meter|probe)s?.{0,40}(wrong|off|junk|useless|inaccurate)|never trust|sensor(nya)? (rusak|error|ngaco|tidak akurat|gak akurat))
+  APP_DISLIKE: ((the|this|their) app (is|was|sucks|stopped|keeps|never|doesn'?t|won'?t)|app (is )?(garbage|useless|terrible|awful|buggy|trash|annoying)|requires? (an|the) app|don'?t want (an|another) app|without (an|the) app|wifi (connection )?(drops|keeps|issues|problems)|aplikasi(nya)? (error|ribet|jelek|lemot))
+  SUBSCRIPTION_DISLIKE: (subscription (model|fee|is|was|sucks|nonsense|scam)|hate subscriptions|no subscription|without a subscription|proprietary pods?|forced to buy (their|pods)|pods? (are )?(a )?(scam|rip ?off|overpriced|expensive)|locked in|vendor lock|razor[- ]and[- ]blades|printer ink|langganan (mahal|ribet))
+  AI_SKEPTICISM: ((\bai\b|machine learning)\s+(is|are)\s+(useless|hype|overkill|unnecessary|a gimmick|gimmicky|nonsense|buzzword)|(\bai\b|machine learning)[- ](washing|buzzword|hype|gimmick)|don'?t need (\bai\b|machine learning)|why (would|do) (you|i|anyone) need (\bai\b|machine learning)|chatgpt (told|said|was wrong|gave (me )?wrong|is wrong)|ai (gave|told) (me )?(wrong|bad))
+  PRICE_OVER_FEATURES: (diy (is|was) (way |much )?(cheaper|better)|build (your|my) own (for|instead)|for (a fraction|half|less) (of the|than)|(cheap|budget|basic) (setup|system) works (just )?(fine|great|as well)|bucket and (an )?air ?stone|tote (setup|system).{0,30}(cheap|\$\d)|lebih murah (bikin|buat|rakit) sendiri|rakit sendiri)
+  SOIL_PREFERENCE: (back to soil|switch(ed|ing)? (back )?to soil|soil is (easier|better|cheaper|simpler)|prefer soil|stick(ing)? (with|to) soil|hydro (is|isn'?t) worth|not worth the (hassle|effort|trouble)|lebih (mudah|gampang) (pakai|pake) tanah)
+  SUSTAINABILITY_SKEPTIC: (hydroponics (is|isn'?t) (not )?(sustainable|green|eco)|energy (hog|intensive)|electricity (bill|cost)s? (is|are|went)|vertical farm(s|ing)? (is|are) (a scam|not sustainable|failing|bankrupt|uneconomic)|carbon footprint|boros listrik)
+problem_cue_v1_generic: (problem|issue|trouble|struggl|help|why (is|are|do|does|did)|what('?s| is) wrong|dying|died|dead|\bdie\b|wilt|yellow|brown|rot|slim|mold|mould|algae|fail|kill|stuck|can'?t|cannot|won'?t|doesn'?t|not working|keeps|too (high|low|much)|drift|fluctuat|crash|burn|deficien|toxic|lockout|stunt|droop|leak|broke|clog|smell|stink|hard|difficult|confus|overwhelm|frustrat|annoy|pain|hassle|expensive|mahal|gagal|mati|kuning|busuk|layu|masalah|kenapa|gimana|bagaimana|susah|sulit|ribet|bingung|bocor|rusak|lumut|jamur|naik terus|turun terus|tolong|bantu|error|inaccurate|drift)
+pain_points_direct:
+  PLANT_HEALTH: (root rot|brown (slimy )?roots|slimy roots|pythium|yellow(ing)? leaves|leaves (are |keep )?(turning )?(yellow|brown)|wilt(ing|ed)?|droop|stunted|damping off|tip ?burn|aphids?|thrips|fungus gnats|spider mites|powdery mildew|mold on|algae (in|on|growing)|seedlings? (dying|died)|plants? (died|dying|are dying)|won'?t (germinate|sprout)|not germinating|akar busuk|daun(nya)? (menguning|kuning)|menguning|layu|kerdil|busuk|tidak tumbuh|gak tumbuh|ga tumbuh|mati semua|semua mati|pada mati|hama|kutu|ulat|jamur|lumut|sarang nyamuk)
+  PH: (\bph\b.{0,40}(drift|swing|keeps|naik|turun|unstable|too high|too low|won'?t|tidak stabil|ga stabil|gak stabil|crash|fluctuat|jumps?))
+  EC_TDS: ((\bppm\b|\btds\b|\bec\b).{0,40}(too high|too low|keeps|naik terus|turun terus|mentok|stuck|won'?t|tidak (naik|turun|ketemu)|gak (naik|turun|ketemu)|ga (naik|turun|ketemu)|kok))
+  COST: (too expensive|overpriced|so expensive|expensive|pricey|can'?t afford|cost(s)? (too much|a lot)|not worth|doesn'?t worth|nutrient cost|how much (does|is|did|would) .{0,30}cost|mahal|kemahalan|biaya(nya)? (besar|tinggi)|modal(nya)? (besar|berapa)|berapa (modal|biaya|harga)|harga(nya)? berapa)
+  TEMPERATURE: ((water|reservoir|nutrient|solution|air|suhu) .{0,25}(too (hot|warm)|overheat|heat ?wave|panas)|kepanasan|suhu air (tinggi|panas))
+  EQUIPMENT: (pump (died|failed|broke|stopped|quit)|pompa (mati|rusak)|leak(ing|ed|s)?\b|bocor|clog(ged|ging)?|plugged|mampet|stopped working|quit working|broke after|defective)
+  SENSOR: ((ph|ec|tds) (pen|meter|probe|sensor)s? .{0,40}(wrong|off|inaccurate|drift|broken|junk|died|calibrat)|kalibrasi (lagi|ulang)|sensor(nya)? (rusak|error|ngaco))
+  KNOWLEDGE: (no idea what i'?m doing|don'?t know (what|how|where)|so much to (know|learn)|overwhelm|confus(ed|ing)|bingung|tidak paham|gak paham|belum paham|new to (this|hydro).{0,40}(help|advice|question))
+  SUPPORT: (customer (service|support).{0,40}(bad|terrible|never|no response|useless)|never (replied|responded)|no way to (contact|get in touch)|charged (me|my account) twice|refund)
