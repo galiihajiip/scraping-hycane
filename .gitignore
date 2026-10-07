@@ -1,0 +1,14 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+data/raw/
+data/bronze/
+data/silver/
+data/checkpoints/
+data/cache/
+# Large data exports (>100MB exceeds GitHub file limit, regenerable from parquet)
+data/gold/hycane_social_listening_gold.csv
+data/gold/hycane_social_listening_gold.jsonl
+data/gold/_*
+.DS_Store
