@@ -1,0 +1,31 @@
+# Relevance, exclusion, spam and scope rules. Every exclusion is logged with a reason code.
+relevance:
+  # A record is "hydroponic-relevant" if it matches any core term OR comes from a hydroponic-specific
+  # community thread whose root post matches a core term or is in a hydroponic-only community.
+  core_terms_regex: "(hydroponi|hidroponi|hydro\\b|kratky|\\bdwc\\b|deep water culture|\\bnft\\b|aeroponi|aerogarden|click ?(and|&) ?grow|lettuce grow|gardyn|rise garden|rockwool|net ?pots?|nutrient solution|\\bppm\\b|\\btds\\b|\\bec\\b|\\bph\\b|reservoir|ab ?mix|nutrisi|rockwool|bagasse|ampas tebu|grow ?lights?|tower garden)"
+  hydroponic_only_communities: [Hydroponics, hydro, kratky, aerogarden, DWC, HydroponicGardening, ClickAndGrow]
+  min_chars: 15
+scope:
+  # Cannabis cultivation is a large share of English hydroponic discourse but is outside HYCANE's
+  # Indonesian food-crop market (and illegal in Indonesia). Flagged, excluded from the core analysis set,
+  # and reported in sensitivity analyses.
+  cannabis_regex: "(cannabis|marijuana|\\bweed\\b|\\bbuds?\\b|\\b420\\b|autoflower|\\bauto ?flower|strain|\\bthc\\b|\\bcbd\\b|kush|trichome|\\bflowering week|\\bbong\\b|\\bstoner|\\bganja|\\bganj\\b|\\bphotoperiod\\b|\\bfem(inized)? seeds?)"
+  exclusion_meanings:
+    hydro_power: "(hydro ?power|hydroelectric|hydro ?dam|hydro ?bill|hydro one|bc hydro|hydro[- ]quebec|hydro ottawa)"
+    bagasse_nonmedia: "(bagasse (plate|bowl|tableware|packaging|container|cup|straw)s?|bagasse (boiler|power|cogeneration|ethanol|biochar)|compostable (plates|tableware))"
+    rockwool_company_insulation: "(rockwool (a/s|international|insulation|stock|shares|aktie|fabrik|factory|plant in)|rockwool.{0,40}insulation|insulation.{0,40}rockwool|isolering|\\bikke\\b|\\bjeg\\b|\\bder\\b.{0,40}rockwool|rockwool.{0,60}\\b(det|som|til)\\b)"
+    video_game_fiction: "(arc raiders|embark studios|satisfactory|stardew|minecraft|fallout|rimworld|oxygen not included|factorio|no man'?s sky|subnautica|starfield|the martian|\\bin[- ]game\\b|gameplay|\\bdlc\\b|\\bnpc\\b|fan ?fic)"
+    person_name: "(rebecca gardyn|gardyn levington)"
+    bot_digest: "(total posts|posts (this|last) week|weekly (digest|stats)|community stats)"
+spam:
+  promo_regex: "(whatsapp|wa\\.me|\\bdm me\\b|order sekarang|hubungi|promo|diskon|discount code|use code|coupon|affiliate|check my (channel|profile)|subscribe to my|follow me|link in bio|shopee\\.co|tokopedia\\.com|amzn\\.to|bit\\.ly)"
+  max_urls: 3
+  repeated_author_text_threshold: 3
+  min_alpha_ratio: 0.4
+dedup:
+  minhash_num_perm: 128
+  minhash_threshold: 0.85
+  shingle_size: 5
+  min_chars_for_near_dup: 40
+thread_dominance:
+  max_share_warning: 0.02
