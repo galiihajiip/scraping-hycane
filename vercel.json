@@ -1,0 +1,17 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/outputs/dashboard/index.html"
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/outputs/dashboard/index.html"
+    },
+    {
+      "source": "/figures/:path*",
+      "destination": "/outputs/figures/:path*"
+    }
+  ]
+}
