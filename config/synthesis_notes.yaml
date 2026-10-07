@@ -1,0 +1,217 @@
+# Researcher annotations (2026-10-08) written after reviewing outputs/tables/*. Every verdict cites the metric
+# keys in outputs/tables/hypothesis_metrics.json. Topic labels derive from top terms + representative records.
+topic_labels:
+  0: {label: "Conversational replies to creators (ID: bang/kak/pak)", review: "Short Indonesian replies/questions addressed to video creators; low technical content."}
+  1: {label: "Gratitude for tutorials (ID: terima kasih ilmunya)", review: "Appreciation comments; signals that tutorial content is valued."}
+  2: {label: "Aquaponics & fish-integrated systems", review: "Mixed ID/EN; hydroponics combined with fish."}
+  3: {label: "Tagalog/mixed-language replies (PH viewers)", review: "Philippine viewers on English/ID videos; greetings and short questions."}
+  4: {label: "Nutrient mixing, calcium/nitrate, ppm", review: "Formulation and dosing questions; core technical friction."}
+  5: {label: "General home & indoor hydroponics", review: "Broad discussion of growing at home/indoors."}
+  6: {label: "Seeds, seedlings & fruiting crops (melon)", review: "Seed sourcing, germination, melon/fruit crops."}
+  7: {label: "Herbs/basil & pod-based growing", review: "Basil, herb seeds, pods (smart-garden users)."}
+  8: {label: "Tomatoes & peppers", review: "Fruiting crops, mostly English."}
+  9: {label: "Learning intent & inspiration (ID)", review: "'Mau belajar', 'menginspirasi'; aspiration language."}
+  10: {label: "Root health & root-zone management", review: "Root rot, net pots, coco; troubleshooting."}
+  11: {label: "AB mix, fertilizer & rockwool (ID)", review: "Which nutrient/medium to use; substitution questions."}
+  12: {label: "Water source, quality & water changes", review: "Tap/rain water, changing water, how often."}
+  13: {label: "Lighting: sunlight vs grow lights", review: "Sun exposure in ID; LEDs in EN."}
+  14: {label: "Buying: price, where to buy, start-up capital", review: "Harga, beli di mana, modal; purchase exploration."}
+  15: {label: "Vertical farming & food-system debate", review: "Commercial vertical farms, land/energy debate (HN/Lemmy)."}
+  16: {label: "Hydroponics vs soil/organic", review: "Comparisons, organic fertilizer, skepticism."}
+  17: {label: "Gardening appreciation & farmer identity", review: "Berkebun, petani; general enthusiasm."}
+  18: {label: "TDS/PPM meters & calibration", review: "How to read/calibrate meters; ppm per crop."}
+  19: {label: "Leafy & bulb vegetables (sayur, bawang)", review: "Which vegetables to grow."}
+  20: {label: "Lettuce/greens & Kratky", review: "Passive Kratky lettuce/spinach."}
+  21: {label: "Video/channel feedback", review: "Comments about videos themselves."}
+  22: {label: "Pumps, PVC pipes & electricity", review: "Pump choice, pipes, power use/outages."}
+  23: {label: "Reservoirs, buckets & DWC plumbing", review: "Reservoir/bucket/drain setups."}
+  24: {label: "Plastic/container safety & DIY containers", review: "Food safety of plastics, reuse of containers."}
+  25: {label: "Heat, rain & water temperature (tropical)", review: "Hujan, atap, panas, chillers — tropical climate friction."}
+  26: {label: "DIY NFT build specs: pipe size, hole spacing", review: "Indonesian DIY paralon builds."}
+  27: {label: "AeroGarden devices & seed pods", review: "Smart-garden owners; pods, models."}
+  28: {label: "Timing: days to harvest, wick cloth, timers", review: "Berapa hari panen, kain flanel, timers."}
+  29: {label: "Channel/link requests & meta posts (noise)", review: "Low-information; includes Lemmy meta and link requests."}
+  30: {label: "DIY system builds & project updates", review: "DWC/NFT/Kratky build logs, some Gardyn."}
+  31: {label: "Pests (aphids, mites, gnats)", review: "Pest problems and remedies."}
+  32: {label: "Algae, hydrogen peroxide & oxygenation", review: "Algae control, H2O2, aeration."}
+  33: {label: "Towers, solar & 3D-printed systems", review: "Vertical towers, maker projects."}
+  34: {label: "Strawberries", review: "Strawberry growing."}
+
+persona_names:
+  0: {name: "Self-identified Beginner", description: "Explicitly new growers (100% beginner signal); ask how-to questions and thank creators; want step-by-step education; few purchase signals yet."}
+  1: {name: "Pragmatic Evaluator / DIY Optimizer", description: "Largest, most heterogeneous segment: compares systems and brands, talks price and DIY savings, gives advice, discusses sensors/monitoring; holds most purchase signals and most contradiction signals (passive-system preference, DIY-is-cheaper)."}
+  2: {name: "Tutorial-Inspired Learner", description: "YouTube-heavy, mostly positive; inspired by tutorials and asking follow-up questions; strong education demand, almost no pain or purchase language."}
+  3: {name: "Struggling Troubleshooter", description: "Every record is problem-solving; plant-health, knowledge and nutrient pains; most negative sentiment; asks for diagnosis; Reddit/forum-heavy."}
+
+hypotheses:
+  H01:
+    verdict: PARTIALLY_SUPPORTED
+    rationale: "Discourse is overwhelmingly home/hobby scale (PROFESSIONAL_COMMERCIAL signal ~2% of customer voice) and Indonesian videos frequently frame growing at home, on balconies or narrow land. But only ~4% of records state a home/indoor/small-space context explicitly, and SPACE is almost never voiced as a pain. Small space is a usage context, not a recurring frustration."
+    action: "Keep urban/home growers as the core segment, but frame space as a context ('fits a balcony/terrace') rather than the main problem HYCANE solves."
+    validation: "Screener in primary survey: dwelling type, growing location, available area."
+  H02:
+    verdict: SUPPORTED
+    rationale: "Among records with an explicit experience signal, ~84% are beginner/never-tried, across all 8 platforms; KNOWLEDGE and PLANT_HEALTH are top-5 pains; Indonesian YouTube comments are dominated by how-to questions and learning intent. Caveat: the beginner rule counts 'belajar/learning', which inflates Indonesian beginner counts."
+    action: "Lead with beginner positioning (guided start, fewer failures)."
+    validation: "Pilot with first-time growers; measure first-harvest success rate with vs without guidance."
+  H03:
+    verdict: NOT_ENOUGH_EVIDENCE
+    rationale: "Only ~10 records state an age explicitly. Age cannot be inferred from public text without violating the protocol."
+    action: "Remove '20–40' as an evidence-based claim; present it as an assumption to test."
+    validation: "Age band question in the primary survey."
+  H04:
+    verdict: PARTIALLY_SUPPORTED
+    rationale: "Active Indonesian-language hydroponic discourse exists at scale (~30.7k customer-voice records, mostly YouTube comments on Indonesian tutorials) with distinct themes (AB mix, DIY paralon builds, heat/rain). Java priority cannot be tested: explicit locations are rare (Java place names in ~180 records). Indonesian volume reflects our Indonesian-first YouTube query design, not national prevalence."
+    action: "Cite as 'active Indonesian online hydroponic learning community'; do not claim Java market size from this data."
+    validation: "Survey/marketplace data by province; YouTube audience analytics of partner channels."
+  H05:
+    verdict: NOT_ENOUGH_EVIDENCE
+    rationale: "No willingness-to-pay can be derived. Price language leans to frugality: 'cheap/murah/DIY' language (~2.3k) far outnumbers premium language (~0.5k); COST is the 2nd most frequent pain; Indonesian price talk centres on DIY component costs (pipes, AB mix, pumps) and start-up capital, and 'I can build it for a fraction' reactions recur. This is a risk signal for a Rp910,000 kit, not a refutation."
+    action: "Position against DIY total cost + failure cost; offer an entry tier; keep price claims as hypotheses."
+    validation: "Van Westendorp/Gabor-Granger price test; conjoint on kit vs DIY vs media refills."
+  H06:
+    verdict: PARTIALLY_SUPPORTED
+    rationale: "Technology talk (sensors/automation/app/AI) appears on all 8 platforms but in only ~4% of records. Explicit monitoring requests exist (~90). Aspect sentiment on sensors is more negative than positive (calibration, reliability), and a passive/no-electronics preference (Kratky, wick) recurs."
+    action: "Treat 'tech-interested' as a sub-segment; sell outcomes (fewer dead plants) rather than technology."
+    validation: "Concept test: monitoring kit vs guided passive kit preference."
+  H07:
+    verdict: NOT_SUPPORTED
+    rationale: "Sustainability appears in ~7% of records and is positive in <1%; among purchase-signal records ~11% mention sustainability vs ~33% price/cost. Some skepticism (energy use, 'boros listrik'). Sustainability is a secondary value, not a purchase driver, in this corpus."
+    action: "Keep sustainability as a supporting/brand and competition-theme message; do not make it the primary purchase reason."
+    validation: "Survey ranking of purchase drivers; A/B message test (sustainability vs ease/success)."
+  H08:
+    verdict: NOT_ENOUGH_EVIDENCE
+    rationale: "School/campus/institution contexts appear in <1% of records. Community and education are, however, the most explicitly requested support features (education ~230 explicit requests on 8 platforms)."
+    action: "Use schools/communities as channels and content partners; keep institutional sales as a hypothesis."
+    validation: "Interviews with 5–10 school/community program leads."
+  H09:
+    verdict: PARTIALLY_SUPPORTED
+    rationale: "Commercial/business discourse is present (~2% professional signal; Indonesian 'usaha/modal/jual' talk), but restaurants and hotels are rarely mentioned (B2B context ~0.4%). Small hydroponic businesses discuss monitoring time and capital, which fits an SME tier more than hospitality."
+    action: "Reframe B2B toward small hydroponic SMEs/farmer groups first; hotels/restaurants as later hypotheses."
+    validation: "B2B discovery interviews with 10 hydroponic SMEs."
+  H10:
+    verdict: NOT_SUPPORTED
+    rationale: "Bagasse is almost absent from customer discourse (18 customer-voice mentions out of ~91k). Of 152 bagasse mentions found anywhere, only ~19 are in a growing-media/compost context; most are tableware, packaging, energy or paper. Growers talk about rockwool, coco, perlite, clay pebbles and sponge; rockwool concerns (irritation, pH, waste) appear ~160 times. Bagasse is an engineering/sustainability differentiator, not a value customers currently ask for."
+    action: "Sell the medium on performance and convenience (germination, no itch, no disposal hassle, local/cheap), with bagasse as the proof of circularity. Prove it works before claiming it."
+    validation: "Lab germination/rooting trials vs rockwool and sponge; blind user trial."
+  H11:
+    verdict: SUPPORTED
+    rationale: "pH and TDS/EC monitoring reach EXPLICIT_REQUEST on ≥6 platforms; PH/EC_TDS/NUTRIENTS pains total ~2.5k records with high severity; TDS/PPM meter and calibration is its own topic. Supported by extension guidance and academic literature. Caveats: calibration burden and sensor reliability are recurring complaints."
+    action: "Make pH + TDS/EC monitoring and 'what to do next' guidance the core value; budget for calibration UX and sensor quality."
+    validation: "Bench test sensor accuracy (target ±0.2 pH as in the team's own plan) and a 4-week home pilot."
+  H12:
+    verdict: PARTIALLY_SUPPORTED
+    rationale: "Customers rarely ask for 'AI' (explicit AI mentions are few; AI aspect sentiment is split ~22% positive / 23% negative). But the underlying jobs — diagnose what is wrong, tell me what to adjust — are the most frequent pains (PLANT_HEALTH, NUTRIENTS, KNOWLEDGE), and diagnostics is explicitly requested. Demand is for answers, not for AI as such."
+    action: "Market 'diagnosis and step-by-step fixes'; mention AI as the mechanism, not the benefit."
+    validation: "Wizard-of-Oz test: human-generated recommendations in the app before building ML."
+  H13:
+    verdict: NOT_ENOUGH_EVIDENCE
+    rationale: "Subscription mentions (~860) are mostly about proprietary seed pods/refills; explicit dislike of subscriptions/pod lock-in recurs (~20) and app complaints are about connectivity and missing alerts. AeroGarden's 2024 shutdown announcement (expert stream) shows app/brand continuity risk. No evidence of willingness to pay for premium software."
+    action: "Make the kit fully usable without subscription; monetize consumables that are optional/open (media, nutrients) before software."
+    validation: "Measure 30-day app retention in pilot; test premium feature uptake with a free trial."
+
+contradictions:
+  ANTI_AUTOMATION:
+    assumption: "Users need/want automation and sensors"
+    examples: "Forum veterans call passive wick/Kratky systems the most reliable and leave them unattended for weeks; Kratky guides promote no-pump, no-electronics growing."
+    interpretation: "A strong low-tech, passive-system culture exists, especially among experienced English-speaking hobbyists."
+    implication: "Offer a passive/low-power mode; position sensors as optional insight, not a requirement."
+  PRICE_OVER_FEATURES:
+    assumption: "Middle-market buyers will pay for an integrated kit"
+    examples: "Reactions to kit videos: 'I can build this for a fraction of the cost', 'waste of money, I can make it for under $100'."
+    interpretation: "DIY substitution is the main competitor; visible hardware is judged on parts cost."
+    implication: "Justify price through outcomes (success rate, saved time) and bundled consumables; avoid commodity-looking hardware."
+  SOIL_PREFERENCE:
+    assumption: "Hydroponics is easier than soil for beginners"
+    examples: "Growers report quitting hydro after chasing pH and water temperature without a chiller and returning to soil; mold/algae problems push beginners back."
+    interpretation: "Abandonment is driven by the exact chemistry/temperature frictions HYCANE targets."
+    implication: "This contradiction doubles as problem validation; measure abandonment reduction in the pilot."
+  SUSTAINABILITY_SKEPTIC:
+    assumption: "Hydroponics is perceived as sustainable"
+    examples: "Indonesian viewers ask whether pumps waste electricity ('boros listrik'); HN/Lemmy debates question vertical-farm energy use."
+    interpretation: "Energy use is the main sustainability objection, not growing media."
+    implication: "Publish energy use per cycle; prefer low-power pumps/solar options; don't over-claim."
+  SUBSCRIPTION_DISLIKE:
+    assumption: "Users accept recurring subscriptions/consumables"
+    examples: "Smart-garden owners criticise ~$5-per-pod pricing and prefer planting their own seed kits."
+    interpretation: "Closed consumable ecosystems trigger resentment."
+    implication: "Keep media/nutrient refills open and optional; price refills transparently."
+  APP_DISLIKE:
+    assumption: "An app improves the experience"
+    examples: "Owners report apps that send no alerts unless opened, WiFi disconnections, and buggy updates."
+    interpretation: "App reliability failures are noticed and discussed; alerts must work in the background."
+    implication: "Prioritize reliable push alerts and offline operation over dashboard features."
+  SENSOR_DISTRUST:
+    assumption: "Sensor readings are trusted"
+    examples: "DIY builders struggle with pH probes drying out, zeroing signal boards and replacement probes."
+    interpretation: "Low volume but concentrated among technical users; calibration is a known pain."
+    implication: "Calibration guidance and probe replacement/consumable plan."
+  AI_SKEPTICISM:
+    assumption: "AI adds value"
+    examples: "A hydroponics business owner doubts AI improves growing beyond what scale already solves."
+    interpretation: "Very rare in corpus; AI is mostly not discussed at all."
+    implication: "Do not lead with AI claims."
+
+contradictions_extra:
+  - contradiction_id: MARKET_AEROGARDEN_SHUTDOWN
+    assumption_challenged: "Consumer smart-hydroponic kits are a durable business"
+    n_customer_voice: "expert stream"
+    evidence_level: E3
+    interpretation: "Scotts Miracle-Gro announced in Nov 2024 it would shut down AeroGarden (EX006), later relaunched in 2025 (EX007)."
+    implication: "Plan for app/brand continuity and a non-app fallback; show unit economics."
+  - contradiction_id: ACADEMIC_SENSOR_LIMITS
+    assumption_challenged: "Sensors + automated dosing solve nutrient management"
+    n_customer_voice: "expert/academic stream"
+    evidence_level: E5
+    interpretation: "UF/IFAS (EX005) and a 2023 review (W4388723157) note EC-based dosing is imprecise and can waste nutrients."
+    implication: "Recommendations must be crop- and stage-aware; avoid 'fully automatic' claims."
+  - contradiction_id: ACADEMIC_BAGASSE_GAP
+    assumption_challenged: "Bagasse media performance is established"
+    n_customer_voice: "academic stream"
+    evidence_level: E5
+    interpretation: "No study in the index tests bagasse as a water-culture hydroponic medium; nearest analogues are soilless tomato substrates (W4293085516) and date-palm waste vs rockwool (W4390103616)."
+    implication: "Lab validation is a prerequisite for media claims."
+
+triangulation_extra:
+  - finding: "pH/TDS-EC monitoring is a wanted capability"
+    customer_signal: "EXPLICIT_REQUEST for ph_monitoring and tds_ec_monitoring (≥6 platforms); PH+EC_TDS+NUTRIENTS pains ~2.5k (see feature_demand.csv, pain_point_summary.csv)"
+    academic_evidence: "W4412063293; W4210357512; W7115687377; W4414415519"
+    expert_evidence: "EX002 (UKY weekly pH/EC monitoring); EX003 (Illinois weekly testing); EX005 (UF limits of EC dosing)"
+    overall_interpretation: "Customer + academic + expert agree that pH/EC management matters; experts warn sensors alone are insufficient."
+    confidence: HIGH
+    insight_level: 4
+  - finding: "Bagasse growing media is customer-relevant"
+    customer_signal: "18 customer-voice mentions of ~91k; bagasse discourse mostly tableware/energy (analysis_results.json → bagasse_discourse)"
+    academic_evidence: "W4293085516; W4385075181; W4390103616 (analogues only)"
+    expert_evidence: "none"
+    overall_interpretation: "No customer salience; technical feasibility only by analogy."
+    confidence: "HIGH (that salience is low)"
+    insight_level: 1
+  - finding: "Sustainability is a purchase driver"
+    customer_signal: "Positive sustainability <1% of voice; 11% of purchase-signal records vs 33% price (hypothesis_metrics.json H07)"
+    academic_evidence: "W4388723157 (higher energy use); W4416825938 (sustainability awareness predicts adoption among millennial farmers)"
+    expert_evidence: "none"
+    overall_interpretation: "Customer and academic evidence conflict: academic adoption models include sustainability awareness, but public discourse rarely voices it. Investigate in primary research."
+    confidence: MEDIUM
+    insight_level: 2
+  - finding: "Beginners need structured education/community"
+    customer_signal: "education EXPLICIT_REQUEST (~230, 8 platforms); KNOWLEDGE pain top-5; gratitude/learning topics dominate Indonesian YouTube"
+    academic_evidence: "W7203544811 (Edufarming diffusion); W7160388792 (inadequate technical knowledge constrains adoption)"
+    expert_evidence: "EX003 (Illinois: start simple, lettuce first)"
+    overall_interpretation: "Customer + academic + expert agree."
+    confidence: HIGH
+    insight_level: 4
+  - finding: "Tropical heat/rain is a distinct Indonesian friction"
+    customer_signal: "Topic 'Heat, rain & water temperature (tropical)'; TEMPERATURE pain 0.35% of ID vs 0.58% non-ID records"
+    academic_evidence: "W4414415519 (tropical EC); W4412063293 (Jakarta)"
+    expert_evidence: "EX001 (CSU root-zone temperature); EX004 (Missouri: DO falls as temperature rises)"
+    overall_interpretation: "Expert evidence strong; customer topic present but rule-based TEMPERATURE pain counts are modest — salience moderate."
+    confidence: MEDIUM
+    insight_level: 3
+  - finding: "Cost/DIY substitution limits kit pricing"
+    customer_signal: "COST pain #2 by frequency; cheap language 2.3k vs premium 0.5k; PRICE_OVER_FEATURES on 7 platforms"
+    academic_evidence: "W7124698067 (high setup cost barrier); W7160388792 (financial barriers)"
+    expert_evidence: "EX003 (DIY passive systems economical vs kits)"
+    overall_interpretation: "Customer + academic + expert agree that cost is a barrier."
+    confidence: HIGH
+    insight_level: 4
